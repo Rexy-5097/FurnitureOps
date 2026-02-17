@@ -20,18 +20,18 @@ The system follows a **Cloud-Native Serverless** architecture, prioritizing stat
 
 ```mermaid
 graph TD
-    Client[Client PWA] -->|Atomic RPC| Next[Next.js API (Serverless)]
-    Next -->|Rate Limit Check| Redis[Upstash Redis]
-    Next -->|Auth Guard| Auth[Supabase Auth]
-    Next -->|Atomic Transaction| DB[(Supabase Postgres)]
+    Client["Client PWA"] -->|Atomic RPC| Next["Next.js API (Serverless)"]
+    Next -->|Rate Limit Check| Redis["Upstash Redis"]
+    Next -->|Auth Guard| Auth["Supabase Auth"]
+    Next -->|Atomic Transaction| DB[("Supabase Postgres")]
 
     subgraph "Consistency Layer"
-        DB -->|RPCS| Functions[Postgres Functions]
-        Functions -->|Audit Log| Audit[Immutable Audit Trail]
+        DB -->|RPCS| Functions["Postgres Functions"]
+        Functions -->|Audit Log| Audit["Immutable Audit Trail"]
     end
 
     subgraph "Resilience"
-        Redis -->|Idempotency Key| Lock[Distributed Lock]
+        Redis -->|Idempotency Key| Lock["Distributed Lock"]
     end
 ```
 
