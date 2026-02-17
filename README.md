@@ -1,6 +1,6 @@
 # FurnitureOps: Enterprise Inventory RPC
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/soumyadebtripathy/furniture-ops/ci.yml?style=flat-square&logo=github)](https://github.com/soumyadebtripathy/furniture-ops/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/Rexy-5097/FurnitureOps/ci.yml?style=flat-square&logo=github)](https://github.com/Rexy-5097/FurnitureOps/actions)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Deployed on Vercel](https://img.shields.io/badge/Vercel-Production-black?style=flat-square&logo=vercel)](https://furniture-ops.vercel.app)
@@ -127,4 +127,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Maintained by @soumyadebtripathy**
+**Maintained by @Rexy-5097**

@@ -95,3 +95,7 @@ feat(core): production-ready release v1.0
 ---
 
 **Status**: 🟢 **READY FOR PUBLIC RELEASE**
+
+## 8. Live Repository
+
+https://github.com/Rexy-5097/FurnitureOps.git
