@@ -1,0 +1,1332 @@
+(node:42467) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[dotenv@17.2.3] injecting env (4) from .env.local -- tip: ⚙️  write to custom object with { processEnv: myObject }
+👷 Resilient Worker Started. Listening for jobs...
+🚀 Processing batch of 50 orders...
+[Job 1/50] Starting processing for queue-test-1771321268172-49
+(node:42528) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[Job 2/50] Starting processing for queue-test-1771321268172-48
+[Job 3/50] Starting processing for queue-test-1771321268172-47
+[Job 4/50] Starting processing for queue-test-1771321268172-46
+[Job 5/50] Starting processing for queue-test-1771321268172-45
+[Job 6/50] Starting processing for queue-test-1771321268172-44
+[Job 7/50] Starting processing for queue-test-1771321268172-43
+[Job 8/50] Starting processing for queue-test-1771321268172-42
+[Job 9/50] Starting processing for queue-test-1771321268172-41
+[Job 10/50] Starting processing for queue-test-1771321268172-40
+[Job 11/50] Starting processing for queue-test-1771321268172-39
+[Job 12/50] Starting processing for queue-test-1771321268172-38
+[Job 13/50] Starting processing for queue-test-1771321268172-37
+[Job 14/50] Starting processing for queue-test-1771321268172-36
+[Job 15/50] Starting processing for queue-test-1771321268172-35
+[Job 16/50] Starting processing for queue-test-1771321268172-34
+[Job 17/50] Starting processing for queue-test-1771321268172-33
+[Job 18/50] Starting processing for queue-test-1771321268172-32
+[Job 19/50] Starting processing for queue-test-1771321268172-31
+[Job 20/50] Starting processing for queue-test-1771321268172-30
+[Job 21/50] Starting processing for queue-test-1771321268172-29
+[Job 22/50] Starting processing for queue-test-1771321268172-28
+[Job 23/50] Starting processing for queue-test-1771321268172-27
+[Job 24/50] Starting processing for queue-test-1771321268172-26
+[Job 25/50] Starting processing for queue-test-1771321268172-25
+[Job 26/50] Starting processing for queue-test-1771321268172-24
+[Job 27/50] Starting processing for queue-test-1771321268172-23
+[Job 28/50] Starting processing for queue-test-1771321268172-22
+[Job 29/50] Starting processing for queue-test-1771321268172-21
+[Job 30/50] Starting processing for queue-test-1771321268172-20
+[Job 31/50] Starting processing for queue-test-1771321268172-19
+[Job 32/50] Starting processing for queue-test-1771321268172-18
+[Job 33/50] Starting processing for queue-test-1771321268172-17
+[Job 34/50] Starting processing for queue-test-1771321268172-16
+[Job 35/50] Starting processing for queue-test-1771321268172-15
+[Job 36/50] Starting processing for queue-test-1771321268172-14
+[Job 37/50] Starting processing for queue-test-1771321268172-13
+[Job 38/50] Starting processing for queue-test-1771321268172-12
+[Job 39/50] Starting processing for queue-test-1771321268172-11
+[Job 40/50] Starting processing for queue-test-1771321268172-10
+[Job 41/50] Starting processing for queue-test-1771321268172-9
+[Job 42/50] Starting processing for queue-test-1771321268172-8
+[Job 43/50] Starting processing for queue-test-1771321268172-7
+[Job 44/50] Starting processing for queue-test-1771321268172-6
+[Job 45/50] Starting processing for queue-test-1771321268172-5
+[Job 46/50] Starting processing for queue-test-1771321268172-4
+[Job 47/50] Starting processing for queue-test-1771321268172-3
+[Job 48/50] Starting processing for queue-test-1771321268172-2
+[Job 49/50] Starting processing for queue-test-1771321268172-1
+[Job 50/50] Starting processing for queue-test-1771321268172-0
+🚀 Processing batch of 1 orders...
+[Job 1/1] Starting processing for load-test-1771321686251-2
+🚀 Processing batch of 37 orders...
+[Job 1/37] Starting processing for load-test-1771321686255-39
+❌ Job Failed: load-test-1771321686255-39 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 2/37] Starting processing for load-test-1771321686253-12
+❌ Job Failed: load-test-1771321686253-12 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 3/37] Starting processing for load-test-1771321686256-45
+❌ Job Failed: load-test-1771321686256-45 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 4/37] Starting processing for load-test-1771321686256-47
+❌ Job Failed: load-test-1771321686256-47 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 5/37] Starting processing for load-test-1771321686256-49
+❌ Job Failed: load-test-1771321686256-49 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 6/37] Starting processing for load-test-1771321686254-21
+❌ Job Failed: load-test-1771321686254-21 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 7/37] Starting processing for load-test-1771321686256-44
+❌ Job Failed: load-test-1771321686256-44 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 8/37] Starting processing for load-test-1771321686255-32
+❌ Job Failed: load-test-1771321686255-32 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 9/37] Starting processing for load-test-1771321686254-17
+❌ Job Failed: load-test-1771321686254-17 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 10/37] Starting processing for load-test-1771321686252-8
+❌ Job Failed: load-test-1771321686252-8 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 11/37] Starting processing for load-test-1771321686255-42
+❌ Job Failed: load-test-1771321686255-42 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 12/37] Starting processing for load-test-1771321686252-7
+❌ Job Failed: load-test-1771321686252-7 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 13/37] Starting processing for load-test-1771321686254-24
+❌ Job Failed: load-test-1771321686254-24 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 14/37] Starting processing for load-test-1771321686255-35
+❌ Job Failed: load-test-1771321686255-35 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 15/37] Starting processing for load-test-1771321686255-36
+❌ Job Failed: load-test-1771321686255-36 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 16/37] Starting processing for load-test-1771321686253-9
+❌ Job Failed: load-test-1771321686253-9 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 17/37] Starting processing for load-test-1771321686253-13
+❌ Job Failed: load-test-1771321686253-13 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 18/37] Starting processing for load-test-1771321686254-19
+❌ Job Failed: load-test-1771321686254-19 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 19/37] Starting processing for load-test-1771321686255-29
+❌ Job Failed: load-test-1771321686255-29 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 20/37] Starting processing for load-test-1771321686253-10
+❌ Job Failed: load-test-1771321686253-10 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 21/37] Starting processing for load-test-1771321686255-40
+❌ Job Failed: load-test-1771321686255-40 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 22/37] Starting processing for load-test-1771321686256-46
+❌ Job Failed: load-test-1771321686256-46 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 23/37] Starting processing for load-test-1771321686254-27
+❌ Job Failed: load-test-1771321686254-27 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 24/37] Starting processing for load-test-1771321686254-22
+❌ Job Failed: load-test-1771321686254-22 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 25/37] Starting processing for load-test-1771321686253-14
+❌ Job Failed: load-test-1771321686253-14 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 26/37] Starting processing for load-test-1771321686256-48
+❌ Job Failed: load-test-1771321686256-48 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 27/37] Starting processing for load-test-1771321686255-43
+❌ Job Failed: load-test-1771321686255-43 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 28/37] Starting processing for load-test-1771321686254-18
+❌ Job Failed: load-test-1771321686254-18 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 29/37] Starting processing for load-test-1771321686253-11
+❌ Job Failed: load-test-1771321686253-11 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 30/37] Starting processing for load-test-1771321686251-3
+❌ Job Failed: load-test-1771321686251-3 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 31/37] Starting processing for load-test-1771321686255-30
+❌ Job Failed: load-test-1771321686255-30 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 32/37] Starting processing for load-test-1771321686252-4
+❌ Job Failed: load-test-1771321686252-4 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 33/37] Starting processing for load-test-1771321686255-38
+❌ Job Failed: load-test-1771321686255-38 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 34/37] Starting processing for load-test-1771321686253-15
+❌ Job Failed: load-test-1771321686253-15 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 35/37] Starting processing for load-test-1771321686251-1
+❌ Job Failed: load-test-1771321686251-1 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 36/37] Starting processing for load-test-1771321686252-6
+❌ Job Failed: load-test-1771321686252-6 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 37/37] Starting processing for load-test-1771321686254-25
+❌ Job Failed: load-test-1771321686254-25 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+🚀 Processing batch of 47 orders...
+[Job 1/47] Starting processing for load-test-1771321782586-35
+[Job 2/47] Starting processing for load-test-1771321782587-47
+❌ Job Failed: load-test-1771321782587-47 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 3/47] Starting processing for load-test-1771321782587-46
+❌ Job Failed: load-test-1771321782587-46 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 4/47] Starting processing for load-test-1771321782587-44
+❌ Job Failed: load-test-1771321782587-44 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 5/47] Starting processing for load-test-1771321782587-48
+❌ Job Failed: load-test-1771321782587-48 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 6/47] Starting processing for load-test-1771321782586-29
+❌ Job Failed: load-test-1771321782586-29 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 7/47] Starting processing for load-test-1771321782586-34
+❌ Job Failed: load-test-1771321782586-34 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 8/47] Starting processing for load-test-1771321782587-40
+❌ Job Failed: load-test-1771321782587-40 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 9/47] Starting processing for load-test-1771321782586-36
+❌ Job Failed: load-test-1771321782586-36 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 10/47] Starting processing for load-test-1771321782586-27
+❌ Job Failed: load-test-1771321782586-27 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 11/47] Starting processing for load-test-1771321782586-26
+❌ Job Failed: load-test-1771321782586-26 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 12/47] Starting processing for load-test-1771321782587-41
+❌ Job Failed: load-test-1771321782587-41 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 13/47] Starting processing for load-test-1771321782586-20
+❌ Job Failed: load-test-1771321782586-20 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 14/47] Starting processing for load-test-1771321782586-25
+❌ Job Failed: load-test-1771321782586-25 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 15/47] Starting processing for load-test-1771321782586-30
+❌ Job Failed: load-test-1771321782586-30 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 16/47] Starting processing for load-test-1771321782586-22
+❌ Job Failed: load-test-1771321782586-22 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 17/47] Starting processing for load-test-1771321782587-37
+❌ Job Failed: load-test-1771321782587-37 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 18/47] Starting processing for load-test-1771321782586-23
+❌ Job Failed: load-test-1771321782586-23 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 19/47] Starting processing for load-test-1771321782586-32
+❌ Job Failed: load-test-1771321782586-32 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 20/47] Starting processing for load-test-1771321782586-33
+❌ Job Failed: load-test-1771321782586-33 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 21/47] Starting processing for load-test-1771321782586-15
+❌ Job Failed: load-test-1771321782586-15 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 22/47] Starting processing for load-test-1771321782585-11
+❌ Job Failed: load-test-1771321782585-11 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 23/47] Starting processing for load-test-1771321782586-21
+❌ Job Failed: load-test-1771321782586-21 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 24/47] Starting processing for load-test-1771321782584-1
+❌ Job Failed: load-test-1771321782584-1 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 25/47] Starting processing for load-test-1771321782586-19
+❌ Job Failed: load-test-1771321782586-19 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 26/47] Starting processing for load-test-1771321782584-4
+❌ Job Failed: load-test-1771321782584-4 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 27/47] Starting processing for load-test-1771321782584-2
+❌ Job Failed: load-test-1771321782584-2 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 28/47] Starting processing for load-test-1771321782587-43
+❌ Job Failed: load-test-1771321782587-43 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 29/47] Starting processing for load-test-1771321782585-13
+❌ Job Failed: load-test-1771321782585-13 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 30/47] Starting processing for load-test-1771321782587-45
+❌ Job Failed: load-test-1771321782587-45 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 31/47] Starting processing for load-test-1771321782585-7
+❌ Job Failed: load-test-1771321782585-7 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 32/47] Starting processing for load-test-1771321782583-0
+❌ Job Failed: load-test-1771321782583-0 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 33/47] Starting processing for load-test-1771321782584-5
+❌ Job Failed: load-test-1771321782584-5 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 34/47] Starting processing for load-test-1771321782584-3
+❌ Job Failed: load-test-1771321782584-3 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 35/47] Starting processing for load-test-1771321782586-28
+❌ Job Failed: load-test-1771321782586-28 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 36/47] Starting processing for load-test-1771321782586-17
+❌ Job Failed: load-test-1771321782586-17 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 37/47] Starting processing for load-test-1771321782585-8
+❌ Job Failed: load-test-1771321782585-8 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 38/47] Starting processing for load-test-1771321782587-39
+❌ Job Failed: load-test-1771321782587-39 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 39/47] Starting processing for load-test-1771321782587-38
+❌ Job Failed: load-test-1771321782587-38 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 40/47] Starting processing for load-test-1771321782586-31
+❌ Job Failed: load-test-1771321782586-31 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 41/47] Starting processing for load-test-1771321782586-24
+❌ Job Failed: load-test-1771321782586-24 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 42/47] Starting processing for load-test-1771321782586-18
+❌ Job Failed: load-test-1771321782586-18 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 43/47] Starting processing for load-test-1771321782585-10
+❌ Job Failed: load-test-1771321782585-10 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 44/47] Starting processing for load-test-1771321782585-14
+❌ Job Failed: load-test-1771321782585-14 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 45/47] Starting processing for load-test-1771321782585-12
+❌ Job Failed: load-test-1771321782585-12 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 46/47] Starting processing for load-test-1771321782585-6
+❌ Job Failed: load-test-1771321782585-6 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 47/47] Starting processing for load-test-1771321782585-9
+❌ Job Failed: load-test-1771321782585-9 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+🚀 Processing batch of 3 orders...
+[Job 1/3] Starting processing for load-test-1771321782587-49
+❌ Job Failed: load-test-1771321782587-49 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 2/3] Starting processing for load-test-1771321782587-42
+❌ Job Failed: load-test-1771321782587-42 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 3/3] Starting processing for load-test-1771321782586-16
+❌ Job Failed: load-test-1771321782586-16 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+🚀 Processing batch of 22 orders...
+[Job 1/22] Starting processing for load-test-1771321863599-41
+[Job 2/22] Starting processing for load-test-1771321863598-13
+❌ Job Failed: load-test-1771321863598-13 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 3/22] Starting processing for load-test-1771321863597-4
+❌ Job Failed: load-test-1771321863597-4 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 4/22] Starting processing for load-test-1771321863599-43
+❌ Job Failed: load-test-1771321863599-43 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 5/22] Starting processing for load-test-1771321863597-7
+❌ Job Failed: load-test-1771321863597-7 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 6/22] Starting processing for load-test-1771321863600-49
+❌ Job Failed: load-test-1771321863600-49 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 7/22] Starting processing for load-test-1771321863599-38
+❌ Job Failed: load-test-1771321863599-38 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 8/22] Starting processing for load-test-1771321863598-14
+❌ Job Failed: load-test-1771321863598-14 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 9/22] Starting processing for load-test-1771321863599-26
+❌ Job Failed: load-test-1771321863599-26 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 10/22] Starting processing for load-test-1771321863597-5
+❌ Job Failed: load-test-1771321863597-5 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 11/22] Starting processing for load-test-1771321863599-47
+❌ Job Failed: load-test-1771321863599-47 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 12/22] Starting processing for load-test-1771321863599-46
+❌ Job Failed: load-test-1771321863599-46 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 13/22] Starting processing for load-test-1771321863599-34
+❌ Job Failed: load-test-1771321863599-34 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 14/22] Starting processing for load-test-1771321863599-45
+❌ Job Failed: load-test-1771321863599-45 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 15/22] Starting processing for load-test-1771321863599-36
+❌ Job Failed: load-test-1771321863599-36 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 16/22] Starting processing for load-test-1771321863598-18
+❌ Job Failed: load-test-1771321863598-18 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 17/22] Starting processing for load-test-1771321863598-16
+❌ Job Failed: load-test-1771321863598-16 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 18/22] Starting processing for load-test-1771321863599-37
+❌ Job Failed: load-test-1771321863599-37 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 19/22] Starting processing for load-test-1771321863599-44
+❌ Job Failed: load-test-1771321863599-44 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 20/22] Starting processing for load-test-1771321863599-39
+❌ Job Failed: load-test-1771321863599-39 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 21/22] Starting processing for load-test-1771321863598-15
+❌ Job Failed: load-test-1771321863598-15 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 22/22] Starting processing for load-test-1771321863599-32
+❌ Job Failed: load-test-1771321863599-32 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+🚀 Processing batch of 9 orders...
+[Job 1/9] Starting processing for load-test-1771321863599-35
+❌ Job Failed: load-test-1771321863599-35 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 2/9] Starting processing for load-test-1771321863600-48
+❌ Job Failed: load-test-1771321863600-48 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 3/9] Starting processing for load-test-1771321863598-12
+❌ Job Failed: load-test-1771321863598-12 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 4/9] Starting processing for load-test-1771321863599-40
+❌ Job Failed: load-test-1771321863599-40 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 5/9] Starting processing for load-test-1771321863596-3
+❌ Job Failed: load-test-1771321863596-3 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 6/9] Starting processing for load-test-1771321863599-33
+❌ Job Failed: load-test-1771321863599-33 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 7/9] Starting processing for load-test-1771321863599-42
+❌ Job Failed: load-test-1771321863599-42 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 8/9] Starting processing for load-test-1771321863597-9
+❌ Job Failed: load-test-1771321863597-9 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 9/9] Starting processing for load-test-1771321863595-0
+❌ Job Failed: load-test-1771321863595-0 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+🚀 Processing batch of 1 orders...
+[Job 1/1] Starting processing for single-test-1771322074171
+❌ Job Failed: single-test-1771322074171 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+🚀 Processing batch of 2 orders...
+[Job 1/2] Starting processing for load-test-1771322103439-8
+[Job 2/2] Starting processing for load-test-1771322103440-32
+❌ Job Failed: load-test-1771322103440-32 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+🚀 Processing batch of 48 orders...
+[Job 1/48] Starting processing for load-test-1771322103440-40
+❌ Job Failed: load-test-1771322103440-40 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 2/48] Starting processing for load-test-1771322103439-21
+❌ Job Failed: load-test-1771322103439-21 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 3/48] Starting processing for load-test-1771322103440-34
+❌ Job Failed: load-test-1771322103440-34 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 4/48] Starting processing for load-test-1771322103438-7
+❌ Job Failed: load-test-1771322103438-7 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 5/48] Starting processing for load-test-1771322103439-9
+❌ Job Failed: load-test-1771322103439-9 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 6/48] Starting processing for load-test-1771322103439-14
+❌ Job Failed: load-test-1771322103439-14 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 7/48] Starting processing for load-test-1771322103439-16
+❌ Job Failed: load-test-1771322103439-16 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 8/48] Starting processing for load-test-1771322103440-31
+❌ Job Failed: load-test-1771322103440-31 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 9/48] Starting processing for load-test-1771322103440-29
+❌ Job Failed: load-test-1771322103440-29 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 10/48] Starting processing for load-test-1771322103439-15
+❌ Job Failed: load-test-1771322103439-15 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 11/48] Starting processing for load-test-1771322103439-23
+❌ Job Failed: load-test-1771322103439-23 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 12/48] Starting processing for load-test-1771322103440-42
+❌ Job Failed: load-test-1771322103440-42 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 13/48] Starting processing for load-test-1771322103440-39
+❌ Job Failed: load-test-1771322103440-39 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 14/48] Starting processing for load-test-1771322103438-5
+❌ Job Failed: load-test-1771322103438-5 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 15/48] Starting processing for load-test-1771322103440-30
+❌ Job Failed: load-test-1771322103440-30 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 16/48] Starting processing for load-test-1771322103439-22
+❌ Job Failed: load-test-1771322103439-22 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 17/48] Starting processing for load-test-1771322103439-17
+❌ Job Failed: load-test-1771322103439-17 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 18/48] Starting processing for load-test-1771322103440-48
+❌ Job Failed: load-test-1771322103440-48 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 19/48] Starting processing for load-test-1771322103439-26
+❌ Job Failed: load-test-1771322103439-26 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 20/48] Starting processing for load-test-1771322103439-12
+❌ Job Failed: load-test-1771322103439-12 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 21/48] Starting processing for load-test-1771322103440-45
+❌ Job Failed: load-test-1771322103440-45 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 22/48] Starting processing for load-test-1771322103439-27
+❌ Job Failed: load-test-1771322103439-27 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 23/48] Starting processing for load-test-1771322103437-0
+❌ Job Failed: load-test-1771322103437-0 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 24/48] Starting processing for load-test-1771322103440-47
+❌ Job Failed: load-test-1771322103440-47 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 25/48] Starting processing for load-test-1771322103439-28
+❌ Job Failed: load-test-1771322103439-28 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 26/48] Starting processing for load-test-1771322103438-3
+❌ Job Failed: load-test-1771322103438-3 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 27/48] Starting processing for load-test-1771322103440-38
+❌ Job Failed: load-test-1771322103440-38 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 28/48] Starting processing for load-test-1771322103440-37
+❌ Job Failed: load-test-1771322103440-37 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 29/48] Starting processing for load-test-1771322103439-19
+❌ Job Failed: load-test-1771322103439-19 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 30/48] Starting processing for load-test-1771322103440-49
+❌ Job Failed: load-test-1771322103440-49 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 31/48] Starting processing for load-test-1771322103439-18
+❌ Job Failed: load-test-1771322103439-18 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 32/48] Starting processing for load-test-1771322103440-46
+❌ Job Failed: load-test-1771322103440-46 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 33/48] Starting processing for load-test-1771322103439-13
+❌ Job Failed: load-test-1771322103439-13 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 34/48] Starting processing for load-test-1771322103440-35
+❌ Job Failed: load-test-1771322103440-35 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 35/48] Starting processing for load-test-1771322103440-43
+❌ Job Failed: load-test-1771322103440-43 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 36/48] Starting processing for load-test-1771322103439-20
+❌ Job Failed: load-test-1771322103439-20 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 37/48] Starting processing for load-test-1771322103440-44
+❌ Job Failed: load-test-1771322103440-44 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 38/48] Starting processing for load-test-1771322103440-33
+❌ Job Failed: load-test-1771322103440-33 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 39/48] Starting processing for load-test-1771322103438-4
+❌ Job Failed: load-test-1771322103438-4 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 40/48] Starting processing for load-test-1771322103438-1
+❌ Job Failed: load-test-1771322103438-1 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 41/48] Starting processing for load-test-1771322103439-11
+❌ Job Failed: load-test-1771322103439-11 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 42/48] Starting processing for load-test-1771322103439-25
+❌ Job Failed: load-test-1771322103439-25 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 43/48] Starting processing for load-test-1771322103440-41
+❌ Job Failed: load-test-1771322103440-41 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 44/48] Starting processing for load-test-1771322103439-10
+❌ Job Failed: load-test-1771322103439-10 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 45/48] Starting processing for load-test-1771322103440-36
+❌ Job Failed: load-test-1771322103440-36 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 46/48] Starting processing for load-test-1771322103438-6
+❌ Job Failed: load-test-1771322103438-6 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 47/48] Starting processing for load-test-1771322103439-24
+❌ Job Failed: load-test-1771322103439-24 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 48/48] Starting processing for load-test-1771322103438-2
+❌ Job Failed: load-test-1771322103438-2 Error: Item not found
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:109:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+🚀 Processing batch of 50 orders...
+[Job 1/50] Starting processing for load-test-1771322155866-44
+[Job 2/50] Starting processing for load-test-1771322155866-39
+❌ Job Failed: load-test-1771322155866-39 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 3/50] Starting processing for load-test-1771322155866-40
+❌ Job Failed: load-test-1771322155866-40 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 4/50] Starting processing for load-test-1771322155866-41
+❌ Job Failed: load-test-1771322155866-41 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 5/50] Starting processing for load-test-1771322155866-45
+❌ Job Failed: load-test-1771322155866-45 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 6/50] Starting processing for load-test-1771322155866-30
+❌ Job Failed: load-test-1771322155866-30 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 7/50] Starting processing for load-test-1771322155866-38
+❌ Job Failed: load-test-1771322155866-38 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 8/50] Starting processing for load-test-1771322155865-23
+❌ Job Failed: load-test-1771322155865-23 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 9/50] Starting processing for load-test-1771322155866-43
+❌ Job Failed: load-test-1771322155866-43 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 10/50] Starting processing for load-test-1771322155865-22
+❌ Job Failed: load-test-1771322155865-22 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 11/50] Starting processing for load-test-1771322155866-48
+❌ Job Failed: load-test-1771322155866-48 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 12/50] Starting processing for load-test-1771322155866-47
+❌ Job Failed: load-test-1771322155866-47 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 13/50] Starting processing for load-test-1771322155866-46
+❌ Job Failed: load-test-1771322155866-46 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 14/50] Starting processing for load-test-1771322155865-8
+❌ Job Failed: load-test-1771322155865-8 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 15/50] Starting processing for load-test-1771322155866-33
+❌ Job Failed: load-test-1771322155866-33 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 16/50] Starting processing for load-test-1771322155866-36
+❌ Job Failed: load-test-1771322155866-36 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 17/50] Starting processing for load-test-1771322155866-37
+❌ Job Failed: load-test-1771322155866-37 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 18/50] Starting processing for load-test-1771322155866-27
+❌ Job Failed: load-test-1771322155866-27 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 19/50] Starting processing for load-test-1771322155865-7
+❌ Job Failed: load-test-1771322155865-7 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 20/50] Starting processing for load-test-1771322155866-26
+❌ Job Failed: load-test-1771322155866-26 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 21/50] Starting processing for load-test-1771322155865-16
+❌ Job Failed: load-test-1771322155865-16 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 22/50] Starting processing for load-test-1771322155866-25
+❌ Job Failed: load-test-1771322155866-25 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 23/50] Starting processing for load-test-1771322155866-24
+❌ Job Failed: load-test-1771322155866-24 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 24/50] Starting processing for load-test-1771322155865-18
+❌ Job Failed: load-test-1771322155865-18 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 25/50] Starting processing for load-test-1771322155865-14
+❌ Job Failed: load-test-1771322155865-14 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 26/50] Starting processing for load-test-1771322155865-9
+❌ Job Failed: load-test-1771322155865-9 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 27/50] Starting processing for load-test-1771322155865-19
+❌ Job Failed: load-test-1771322155865-19 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 28/50] Starting processing for load-test-1771322155866-49
+❌ Job Failed: load-test-1771322155866-49 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 29/50] Starting processing for load-test-1771322155864-5
+❌ Job Failed: load-test-1771322155864-5 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 30/50] Starting processing for load-test-1771322155865-15
+❌ Job Failed: load-test-1771322155865-15 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 31/50] Starting processing for load-test-1771322155865-13
+❌ Job Failed: load-test-1771322155865-13 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 32/50] Starting processing for load-test-1771322155866-31
+❌ Job Failed: load-test-1771322155866-31 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 33/50] Starting processing for load-test-1771322155865-17
+❌ Job Failed: load-test-1771322155865-17 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 34/50] Starting processing for load-test-1771322155865-6
+❌ Job Failed: load-test-1771322155865-6 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 35/50] Starting processing for load-test-1771322155866-28
+❌ Job Failed: load-test-1771322155866-28 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 36/50] Starting processing for load-test-1771322155864-3
+❌ Job Failed: load-test-1771322155864-3 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 37/50] Starting processing for load-test-1771322155864-4
+❌ Job Failed: load-test-1771322155864-4 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 38/50] Starting processing for load-test-1771322155866-32
+❌ Job Failed: load-test-1771322155866-32 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 39/50] Starting processing for load-test-1771322155865-21
+❌ Job Failed: load-test-1771322155865-21 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 40/50] Starting processing for load-test-1771322155864-2
+❌ Job Failed: load-test-1771322155864-2 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 41/50] Starting processing for load-test-1771322155865-10
+❌ Job Failed: load-test-1771322155865-10 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 42/50] Starting processing for load-test-1771322155864-1
+❌ Job Failed: load-test-1771322155864-1 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 43/50] Starting processing for load-test-1771322155866-35
+❌ Job Failed: load-test-1771322155866-35 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 44/50] Starting processing for load-test-1771322155865-20
+❌ Job Failed: load-test-1771322155865-20 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 45/50] Starting processing for load-test-1771322155866-29
+❌ Job Failed: load-test-1771322155866-29 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 46/50] Starting processing for load-test-1771322155866-34
+❌ Job Failed: load-test-1771322155866-34 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 47/50] Starting processing for load-test-1771322155866-42
+❌ Job Failed: load-test-1771322155866-42 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 48/50] Starting processing for load-test-1771322155865-11
+❌ Job Failed: load-test-1771322155865-11 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 49/50] Starting processing for load-test-1771322155865-12
+❌ Job Failed: load-test-1771322155865-12 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 50/50] Starting processing for load-test-1771322155863-0
+❌ Job Failed: load-test-1771322155863-0 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+🚀 Processing batch of 5 orders...
+[Job 1/5] Starting processing for load-test-1771322197411-2
+[Job 2/5] Starting processing for load-test-1771322197410-0
+❌ Job Failed: load-test-1771322197410-0 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 3/5] Starting processing for load-test-1771322197411-3
+❌ Job Failed: load-test-1771322197411-3 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 4/5] Starting processing for load-test-1771322197410-1
+❌ Job Failed: load-test-1771322197410-1 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 5/5] Starting processing for load-test-1771322197411-4
+❌ Job Failed: load-test-1771322197411-4 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+🚀 Processing batch of 40 orders...
+[Job 1/40] Starting processing for load-test-1771322200574-42
+❌ Job Failed: load-test-1771322200574-42 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 2/40] Starting processing for load-test-1771322200575-43
+❌ Job Failed: load-test-1771322200575-43 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 3/40] Starting processing for load-test-1771322200574-40
+❌ Job Failed: load-test-1771322200574-40 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 4/40] Starting processing for load-test-1771322200574-41
+❌ Job Failed: load-test-1771322200574-41 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 5/40] Starting processing for load-test-1771322200575-44
+❌ Job Failed: load-test-1771322200575-44 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 6/40] Starting processing for load-test-1771322200192-36
+❌ Job Failed: load-test-1771322200192-36 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 7/40] Starting processing for load-test-1771322200192-35
+❌ Job Failed: load-test-1771322200192-35 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 8/40] Starting processing for load-test-1771322200192-37
+❌ Job Failed: load-test-1771322200192-37 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 9/40] Starting processing for load-test-1771322200192-38
+❌ Job Failed: load-test-1771322200192-38 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 10/40] Starting processing for load-test-1771322200193-39
+❌ Job Failed: load-test-1771322200193-39 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 11/40] Starting processing for load-test-1771322199828-33
+❌ Job Failed: load-test-1771322199828-33 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 12/40] Starting processing for load-test-1771322199828-32
+❌ Job Failed: load-test-1771322199828-32 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 13/40] Starting processing for load-test-1771322199828-30
+❌ Job Failed: load-test-1771322199828-30 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 14/40] Starting processing for load-test-1771322199828-31
+❌ Job Failed: load-test-1771322199828-31 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 15/40] Starting processing for load-test-1771322199828-34
+❌ Job Failed: load-test-1771322199828-34 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 16/40] Starting processing for load-test-1771322199355-25
+❌ Job Failed: load-test-1771322199355-25 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 17/40] Starting processing for load-test-1771322199355-27
+❌ Job Failed: load-test-1771322199355-27 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 18/40] Starting processing for load-test-1771322199356-28
+❌ Job Failed: load-test-1771322199356-28 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 19/40] Starting processing for load-test-1771322199355-26
+❌ Job Failed: load-test-1771322199355-26 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 20/40] Starting processing for load-test-1771322199356-29
+❌ Job Failed: load-test-1771322199356-29 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 21/40] Starting processing for load-test-1771322198980-20
+❌ Job Failed: load-test-1771322198980-20 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 22/40] Starting processing for load-test-1771322198980-21
+❌ Job Failed: load-test-1771322198980-21 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 23/40] Starting processing for load-test-1771322198980-22
+❌ Job Failed: load-test-1771322198980-22 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 24/40] Starting processing for load-test-1771322198980-23
+❌ Job Failed: load-test-1771322198980-23 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 25/40] Starting processing for load-test-1771322198980-24
+❌ Job Failed: load-test-1771322198980-24 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 26/40] Starting processing for load-test-1771322198551-17
+❌ Job Failed: load-test-1771322198551-17 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 27/40] Starting processing for load-test-1771322198551-16
+❌ Job Failed: load-test-1771322198551-16 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 28/40] Starting processing for load-test-1771322198551-15
+❌ Job Failed: load-test-1771322198551-15 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 29/40] Starting processing for load-test-1771322198551-18
+❌ Job Failed: load-test-1771322198551-18 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 30/40] Starting processing for load-test-1771322198551-19
+❌ Job Failed: load-test-1771322198551-19 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 31/40] Starting processing for load-test-1771322198173-12
+❌ Job Failed: load-test-1771322198173-12 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 32/40] Starting processing for load-test-1771322198173-11
+❌ Job Failed: load-test-1771322198173-11 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 33/40] Starting processing for load-test-1771322198173-13
+❌ Job Failed: load-test-1771322198173-13 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 34/40] Starting processing for load-test-1771322198173-10
+❌ Job Failed: load-test-1771322198173-10 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 35/40] Starting processing for load-test-1771322198173-14
+❌ Job Failed: load-test-1771322198173-14 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 36/40] Starting processing for load-test-1771322197820-6
+❌ Job Failed: load-test-1771322197820-6 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 37/40] Starting processing for load-test-1771322197820-8
+❌ Job Failed: load-test-1771322197820-8 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 38/40] Starting processing for load-test-1771322197820-7
+❌ Job Failed: load-test-1771322197820-7 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 39/40] Starting processing for load-test-1771322197819-5
+❌ Job Failed: load-test-1771322197819-5 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 40/40] Starting processing for load-test-1771322197820-9
+❌ Job Failed: load-test-1771322197820-9 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+🚀 Processing batch of 5 orders...
+[Job 1/5] Starting processing for load-test-1771322200930-46
+❌ Job Failed: load-test-1771322200930-46 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 2/5] Starting processing for load-test-1771322200930-47
+❌ Job Failed: load-test-1771322200930-47 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 3/5] Starting processing for load-test-1771322200930-48
+❌ Job Failed: load-test-1771322200930-48 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 4/5] Starting processing for load-test-1771322200930-45
+❌ Job Failed: load-test-1771322200930-45 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 5/5] Starting processing for load-test-1771322200930-49
+❌ Job Failed: load-test-1771322200930-49 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+🚀 Processing batch of 5 orders...
+[Job 1/5] Starting processing for load-test-1771322249190-2
+[Job 2/5] Starting processing for load-test-1771322249190-3
+❌ Job Failed: load-test-1771322249190-3 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 3/5] Starting processing for load-test-1771322249189-0
+❌ Job Failed: load-test-1771322249189-0 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 4/5] Starting processing for load-test-1771322249190-1
+❌ Job Failed: load-test-1771322249190-1 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 5/5] Starting processing for load-test-1771322249190-4
+❌ Job Failed: load-test-1771322249190-4 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+🚀 Processing batch of 44 orders...
+[Job 1/44] Starting processing for load-test-1771322252829-48
+❌ Job Failed: load-test-1771322252829-48 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 2/44] Starting processing for load-test-1771322252829-49
+❌ Job Failed: load-test-1771322252829-49 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 3/44] Starting processing for load-test-1771322252829-45
+❌ Job Failed: load-test-1771322252829-45 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 4/44] Starting processing for load-test-1771322252829-46
+❌ Job Failed: load-test-1771322252829-46 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 5/44] Starting processing for load-test-1771322252454-43
+❌ Job Failed: load-test-1771322252454-43 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 6/44] Starting processing for load-test-1771322252454-42
+❌ Job Failed: load-test-1771322252454-42 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 7/44] Starting processing for load-test-1771322252454-41
+❌ Job Failed: load-test-1771322252454-41 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 8/44] Starting processing for load-test-1771322252454-40
+❌ Job Failed: load-test-1771322252454-40 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 9/44] Starting processing for load-test-1771322252454-44
+❌ Job Failed: load-test-1771322252454-44 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 10/44] Starting processing for load-test-1771322252041-37
+❌ Job Failed: load-test-1771322252041-37 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 11/44] Starting processing for load-test-1771322252041-38
+❌ Job Failed: load-test-1771322252041-38 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 12/44] Starting processing for load-test-1771322252041-36
+❌ Job Failed: load-test-1771322252041-36 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 13/44] Starting processing for load-test-1771322252041-35
+❌ Job Failed: load-test-1771322252041-35 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 14/44] Starting processing for load-test-1771322252041-39
+❌ Job Failed: load-test-1771322252041-39 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 15/44] Starting processing for load-test-1771322251688-33
+❌ Job Failed: load-test-1771322251688-33 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 16/44] Starting processing for load-test-1771322251688-32
+❌ Job Failed: load-test-1771322251688-32 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 17/44] Starting processing for load-test-1771322251687-30
+❌ Job Failed: load-test-1771322251687-30 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 18/44] Starting processing for load-test-1771322251688-34
+❌ Job Failed: load-test-1771322251688-34 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 19/44] Starting processing for load-test-1771322251688-31
+❌ Job Failed: load-test-1771322251688-31 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 20/44] Starting processing for load-test-1771322251288-28
+❌ Job Failed: load-test-1771322251288-28 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 21/44] Starting processing for load-test-1771322251288-27
+❌ Job Failed: load-test-1771322251288-27 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 22/44] Starting processing for load-test-1771322251288-29
+❌ Job Failed: load-test-1771322251288-29 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 23/44] Starting processing for load-test-1771322251288-25
+❌ Job Failed: load-test-1771322251288-25 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 24/44] Starting processing for load-test-1771322251288-26
+❌ Job Failed: load-test-1771322251288-26 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 25/44] Starting processing for load-test-1771322250922-23
+❌ Job Failed: load-test-1771322250922-23 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 26/44] Starting processing for load-test-1771322250922-22
+❌ Job Failed: load-test-1771322250922-22 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 27/44] Starting processing for load-test-1771322250922-24
+❌ Job Failed: load-test-1771322250922-24 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 28/44] Starting processing for load-test-1771322250922-21
+❌ Job Failed: load-test-1771322250922-21 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 29/44] Starting processing for load-test-1771322250922-20
+❌ Job Failed: load-test-1771322250922-20 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 30/44] Starting processing for load-test-1771322250556-17
+❌ Job Failed: load-test-1771322250556-17 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 31/44] Starting processing for load-test-1771322250556-18
+❌ Job Failed: load-test-1771322250556-18 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 32/44] Starting processing for load-test-1771322250556-16
+❌ Job Failed: load-test-1771322250556-16 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 33/44] Starting processing for load-test-1771322250556-15
+❌ Job Failed: load-test-1771322250556-15 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 34/44] Starting processing for load-test-1771322250556-19
+❌ Job Failed: load-test-1771322250556-19 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 35/44] Starting processing for load-test-1771322250173-12
+❌ Job Failed: load-test-1771322250173-12 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 36/44] Starting processing for load-test-1771322250173-13
+❌ Job Failed: load-test-1771322250173-13 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 37/44] Starting processing for load-test-1771322250173-11
+❌ Job Failed: load-test-1771322250173-11 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 38/44] Starting processing for load-test-1771322250173-10
+❌ Job Failed: load-test-1771322250173-10 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 39/44] Starting processing for load-test-1771322250173-14
+❌ Job Failed: load-test-1771322250173-14 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 40/44] Starting processing for load-test-1771322249788-7
+❌ Job Failed: load-test-1771322249788-7 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 41/44] Starting processing for load-test-1771322249788-8
+❌ Job Failed: load-test-1771322249788-8 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 42/44] Starting processing for load-test-1771322249787-5
+❌ Job Failed: load-test-1771322249787-5 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 43/44] Starting processing for load-test-1771322249788-6
+❌ Job Failed: load-test-1771322249788-6 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[Job 44/44] Starting processing for load-test-1771322249788-9
+❌ Job Failed: load-test-1771322249788-9 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+🚀 Processing batch of 1 orders...
+[Job 1/1] Starting processing for load-test-1771322252829-47
+❌ Job Failed: load-test-1771322252829-47 Error: Insufficient stock
+    at processQueue (/Users/soumyadebtripathy/FurnitureOps/scripts/inventory-worker.ts:110:75)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)

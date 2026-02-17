@@ -1,0 +1,404 @@
+(node:39126) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[dotenv@17.2.3] injecting env (4) from .env.local -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+👷 Resilient Worker Started. Listening for jobs...
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888135-49',
+  timestamp: 1771320888135,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888135-48',
+  timestamp: 1771320888135,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888135-47',
+  timestamp: 1771320888135,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888135-46',
+  timestamp: 1771320888135,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888135-45',
+  timestamp: 1771320888135,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888135-44',
+  timestamp: 1771320888135,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888135-43',
+  timestamp: 1771320888135,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888135-42',
+  timestamp: 1771320888135,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888135-41',
+  timestamp: 1771320888135,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888135-40',
+  timestamp: 1771320888135,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888135-39',
+  timestamp: 1771320888135,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888135-38',
+  timestamp: 1771320888135,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888135-37',
+  timestamp: 1771320888135,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888135-36',
+  timestamp: 1771320888135,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888135-35',
+  timestamp: 1771320888135,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888135-34',
+  timestamp: 1771320888135,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-33',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-32',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-31',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-30',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-29',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-28',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-27',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-26',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-25',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-24',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-23',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-22',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-21',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-20',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-19',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-18',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-17',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-16',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-15',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-14',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-13',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-12',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-11',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-10',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-9',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-8',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-7',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-6',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-5',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-4',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-3',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-2',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-1',
+  timestamp: 1771320888134,
+  retry_count: 0
+}
+Failed to parse job: {
+  item_id: '6039cef7-8e14-4c13-a1ab-6cbaeb12d42e',
+  quantity: 1,
+  actor_id: '290cbfaa-094c-4332-aee3-f7c51ed573e0',
+  idempotency_key: 'queue-test-1771320888134-0',
+  timestamp: 1771320888134,
+  retry_count: 0
+}

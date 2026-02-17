@@ -1,0 +1,7 @@
+(node:40178) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[dotenv@17.2.3] injecting env (4) from .env.local -- tip: ⚙️  enable debug logging with { debug: true }
+👷 Resilient Worker Started. Listening for jobs...
+🚀 Processing batch of 50 orders...
+(node:40294) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
