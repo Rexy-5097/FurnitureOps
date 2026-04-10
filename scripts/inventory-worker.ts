@@ -127,7 +127,6 @@ async function processQueue() {
                      resultsData.push(updated);
                      
                      // Audit
-                     // Audit
                      const { error: auditLogErr } = await (supabase as any).from('audit_logs').insert({
                          action: 'STOCK_DECREMENT_WORKER',
                          actor_id: job.actor_id,
@@ -135,6 +134,8 @@ async function processQueue() {
                      });
                      if (auditLogErr) {
                          console.error('⚠️ Audit Log Insert Failed:', auditLogErr.message);
+                     } else {
+                        // console.log(`✅ Audit Logged: ${job.item_id}`); 
                      }
 
                      // Commit Idempotency

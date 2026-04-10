@@ -124,7 +124,7 @@ export default function AdminTools({ isOpen, onClose, onSuccess }: AdminToolsPro
         <div className="flex border-b border-white/10">
             <button
                 onClick={() => setActiveTab('audit')}
-                className={`flex-1 flex items-center justify-center gap-2 py-3 text-sm font-medium transition-colors ${activeTab === 'audit' ? 'border-b-2 border-blue-500 text-blue-400 bg-blue-500/10' : 'text-white/40 hover:text-white hover:bg-white/5'}`}
+                className={`flex-1 flex items-center justify-center gap-2 py-3 text-sm font-medium transition-colors ${activeTab === 'audit' ? 'border-b-2 border-amber-500 text-amber-400 bg-amber-500/10' : 'text-white/40 hover:text-white hover:bg-white/5'}`}
             >
                 <Shield className="h-4 w-4" />
                 Audit Logs

@@ -2,7 +2,7 @@ import { getServiceSupabase } from '@/lib/supabase';
 import { validateAdminRequest } from '@/lib/auth-guard';
 import { NextResponse } from 'next/server';
 
-export const revalidate = 0;
+export const revalidate = 5;
 
 export async function GET() {
   const supabase = getServiceSupabase();

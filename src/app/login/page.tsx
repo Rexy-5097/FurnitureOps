@@ -74,13 +74,13 @@ export default function LoginPage() {
       <div className="absolute inset-0 bg-black" />
 
       {/* Drifting orbs */}
-      <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-blue-600/20 blur-[120px] rounded-full mix-blend-screen animate-drift" />
+      <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-amber-600/20 blur-[120px] rounded-full mix-blend-screen animate-drift" />
       <div
-        className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-purple-600/20 blur-[120px] rounded-full mix-blend-screen animate-drift"
+        className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-orange-600/20 blur-[120px] rounded-full mix-blend-screen animate-drift"
         style={{ animationDelay: '3s' }}
       />
       <div
-        className="absolute top-[30%] left-[60%] w-[35%] h-[35%] bg-indigo-500/10 blur-[100px] rounded-full mix-blend-screen animate-drift"
+        className="absolute top-[30%] left-[60%] w-[35%] h-[35%] bg-amber-500/10 blur-[100px] rounded-full mix-blend-screen animate-drift"
         style={{ animationDelay: '5s', animationDuration: '10s' }}
       />
 
@@ -143,7 +143,7 @@ export default function LoginPage() {
                 Email Address
               </label>
               <div className="relative group">
-                <Mail className="absolute left-3 top-3 h-5 w-5 text-white/40 group-focus-within:text-blue-400 transition-colors duration-300" />
+                <Mail className="absolute left-3 top-3 h-5 w-5 text-white/40 group-focus-within:text-amber-400 transition-colors duration-300" />
                 <input
                   id="email"
                   type="email"
@@ -152,7 +152,7 @@ export default function LoginPage() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   disabled={isAnyLoading}
-                  className="w-full pl-10 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-white/20 focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 outline-none transition-all duration-300 disabled:opacity-50"
+                  className="w-full pl-10 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-white/20 focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500/50 outline-none transition-all duration-300 disabled:opacity-50"
                 />
               </div>
             </div>
@@ -163,7 +163,7 @@ export default function LoginPage() {
                 Password
               </label>
               <div className="relative group">
-                <Lock className="absolute left-3 top-3 h-5 w-5 text-white/40 group-focus-within:text-purple-400 transition-colors duration-300" />
+                <Lock className="absolute left-3 top-3 h-5 w-5 text-white/40 group-focus-within:text-orange-400 transition-colors duration-300" />
                 <input
                   id="password"
                   type="password"
@@ -172,7 +172,7 @@ export default function LoginPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   disabled={isAnyLoading}
-                  className="w-full pl-10 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-white/20 focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500/50 outline-none transition-all duration-300 disabled:opacity-50"
+                  className="w-full pl-10 pr-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder:text-white/20 focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500/50 outline-none transition-all duration-300 disabled:opacity-50"
                 />
               </div>
             </div>
@@ -182,7 +182,7 @@ export default function LoginPage() {
               <button
                 type="submit"
                 disabled={isAnyLoading}
-                className="w-full flex items-center justify-center py-3.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-bold hover:shadow-lg hover:shadow-blue-600/25 focus:ring-4 focus:ring-blue-500/30 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed active:scale-[0.98] bg-[length:200%_100%] hover:bg-right"
+                className="w-full flex items-center justify-center py-3.5 bg-gradient-to-r from-amber-600 to-orange-600 text-white rounded-xl font-bold hover:shadow-lg hover:shadow-amber-600/25 focus:ring-4 focus:ring-amber-500/30 transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed active:scale-[0.98] bg-[length:200%_100%] hover:bg-right"
               >
                 {loading ? (
                   <Loader2 className="h-5 w-5 animate-spin" />
