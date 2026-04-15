@@ -46,25 +46,25 @@ export default function LandingPageContent() {
     offset: ['start start', 'end end'],
   });
 
-  const getScrollTransform = (safeVal: any, mobileVal: any) => 
-    prefersReducedMotion || isMobile ? mobileVal : safeVal;
-
-  const heroZ = useTransform(scrollYProgress, [0, 0.2], getScrollTransform([0, -500], [0, 0]));
+  const isRedux = !!(prefersReducedMotion || isMobile);
+  
+  const heroZ = useTransform(scrollYProgress, [0, 0.2], isRedux ? [0, 0] : [0, -500]);
+  const heroTransform = useTransform(heroZ, (z: number) => `translateZ(${z}px)`);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.15], [1, 0]);
 
-  const problemY = useTransform(scrollYProgress, [0.1, 0.3], getScrollTransform([100, 0], [0, 0]));
+  const problemY = useTransform(scrollYProgress, [0.1, 0.3], isRedux ? [0, 0] : [100, 0]);
   const problemOpacity = useTransform(scrollYProgress, [0.1, 0.2, 0.3], [0, 1, 0]);
 
-  const solutionY = useTransform(scrollYProgress, [0.3, 0.5], getScrollTransform([100, 0], [0, 0]));
+  const solutionY = useTransform(scrollYProgress, [0.3, 0.5], isRedux ? [0, 0] : [100, 0]);
   const solutionOpacity = useTransform(scrollYProgress, [0.3, 0.4, 0.5], [0, 1, 0]);
 
-  const engineY = useTransform(scrollYProgress, [0.5, 0.7], getScrollTransform([100, 0], [0, 0]));
+  const engineY = useTransform(scrollYProgress, [0.5, 0.7], isRedux ? [0, 0] : [100, 0]);
   const engineOpacity = useTransform(scrollYProgress, [0.5, 0.6, 0.7], [0, 1, 0]);
 
-  const scaleZoom = useTransform(scrollYProgress, [0.7, 0.9], getScrollTransform([0.8, 1.2], [1, 1]));
+  const scaleZoom = useTransform(scrollYProgress, [0.7, 0.9], isRedux ? [1, 1] : [0.8, 1.2]);
   const scaleOpacity = useTransform(scrollYProgress, [0.7, 0.8, 0.9], [0, 1, 0]);
 
-  const ctaY = useTransform(scrollYProgress, [0.85, 1], getScrollTransform([100, 0], [0, 0]));
+  const ctaY = useTransform(scrollYProgress, [0.85, 1], isRedux ? [0, 0] : [100, 0]);
   const ctaOpacity = useTransform(scrollYProgress, [0.85, 1], [0, 1]);
 
   // Depth Layers based on mouse
@@ -76,6 +76,9 @@ export default function LandingPageContent() {
 
   const fgDepthX = useTransform(smoothMouseX, [-1, 1], [-50, 50]);
   const fgDepthY = useTransform(smoothMouseY, [-1, 1], [-50, 50]);
+  
+  const mixedCTA_X = useTransform([midDepthX, mouseX], ([v1, v2]: any[]) => v1 + (v2 - v1) * 0.5);
+  const mixedCTA_Y = useTransform([midDepthY, mouseY], ([v1, v2]: any[]) => v1 + (v2 - v1) * 0.5);
 
   return (
     <div 
@@ -117,7 +120,7 @@ export default function LandingPageContent() {
       {/* SECTION 1: HERO */}
       <motion.section 
         className="sticky top-0 h-screen flex flex-col items-center justify-center overflow-hidden z-10 px-4"
-        style={{ opacity: heroOpacity, z: heroZ }}
+        style={{ opacity: heroOpacity, z: heroZ } as any}
       >
         <div className="relative w-full max-w-7xl mx-auto text-center perspective-1000 flex flex-col items-center">
           <motion.div
@@ -289,7 +292,7 @@ export default function LandingPageContent() {
                <div className="w-full h-28 bg-white/[0.04] border border-white/10 rounded-2xl backdrop-blur-2xl flex items-center px-6 text-white/80 font-mono text-xs leading-loose shadow-[inset_0_1px_rgba(255,255,255,0.1),0_8px_32px_rgba(0,0,0,0.5)] ring-1 ring-[#4F8CFF]/20">
                  UPDATE inventory <br/>
                  SET qty = qty - 1 <br/>
-                 WHERE id = 'sku_089'
+                 WHERE id = &apos;sku_089&apos;
                </div>
                <div className="w-0.5 h-6 bg-gradient-to-b from-indigo-500/40 to-purple-500/40" />
                <div className="w-full h-20 bg-white/[0.02] border border-white/10 rounded-2xl backdrop-blur-2xl flex items-center px-6 shadow-[inset_0_1px_rgba(255,255,255,0.1),0_8px_32px_rgba(0,0,0,0.5)]">
@@ -351,7 +354,7 @@ export default function LandingPageContent() {
             className="w-full rounded-3xl bg-white/5 border border-white/10 backdrop-blur-2xl p-8 sm:p-12 md:p-20 text-center ring-1 ring-white/5 shadow-[inset_0_1px_rgba(255,255,255,0.1),0_20px_60px_rgba(0,0,0,0.6)] safe-area-padding"
             whileHover={!isMobile && !prefersReducedMotion ? { rotateX: 2, rotateY: -2, scale: 1.01 } : {}}
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
-            style={{ x: mix(midDepthX, mouseX, 0.5), y: mix(midDepthY, mouseY, 0.5) }} // Subtle tie to cursor
+            style={{ x: mixedCTA_X, y: mixedCTA_Y }} 
           >
             <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-6 md:mb-10 text-white drop-shadow-sm leading-tight">
               Run your inventory like a system. <br className="hidden md:block" />
@@ -368,9 +371,4 @@ export default function LandingPageContent() {
       </motion.section>
     </div>
   );
-}
-
-// Utility to mix motion values for very subtle effects
-function mix(val1: any, val2: any, amount = 0.5) {
-  return useTransform([val1, val2], ([v1, v2]: any[]) => v1 + (v2 - v1) * amount);
 }
