@@ -64,17 +64,65 @@ export default function InventoryModal({ isOpen, onClose, onSuccess, editingItem
     }
   };
 
-  const uploadImage = async (file: File) => {
+  const safeUpload = async (file: File) => {
       const supabase = createBrowserClient();
-      const { data: { session } } = await supabase.auth.getSession();
-      if (!session) throw new Error("You must be logged in to upload images.");
+      
+      // Force User Fetch to internally refresh token if needed
+      await supabase.auth.getUser();
+
+      const { data: { session }, error } = await supabase.auth.getSession();
+      
+      if (!session || !session.access_token) {
+        throw new Error("Session expired. Please login again.");
+      }
+
+      // Front-end File Size Validation (5MB Max)
+      const MAX_FILE_SIZE = 5 * 1024 * 1024;
+      if (file.size > MAX_FILE_SIZE) {
+        throw new Error("File exceeds the maximum limit of 5MB.");
+      }
+
+      // Restrict file types
+      const allowedExtensions = ['png', 'jpg', 'jpeg'];
+      const ext = file.name.split('.').pop()?.toLowerCase();
+      if (!ext || !allowedExtensions.includes(ext)) {
+        throw new Error("Only PNG, JPG, and JPEG images are allowed.");
+      }
 
       const path = `public/${Date.now()}_${file.name.replace(/\s+/g, '_')}`;
-      const { error: uploadError } = await supabase.storage
-        .from('furniture-images')
-        .upload(path, file);
+      
+      // Debug Logging before upload
+      console.log('=== UPLOAD DEBUG CHECKLIST ===');
+      console.log({
+        user: session?.user?.id,
+        token: session?.access_token?.slice(0, 20)
+      });
+      console.log('Session exists:', !!session);
+      console.log('File path:', path);
+      console.log('File size (bytes):', file.size);
+      console.log('==============================');
 
-      if (uploadError) throw new Error(`Image upload failed: ${uploadError.message}`);
+      const executeUpload = async () => {
+        return await supabase.storage
+          .from('furniture-images')
+          .upload(path, file, {
+            cacheControl: '3600',
+            upsert: false
+          });
+      };
+
+      let uploadResult = await executeUpload();
+
+      // Retry once after refresh
+      if (uploadResult.error) {
+        console.warn('Upload failed, refreshing session and retrying...', uploadResult.error.message);
+        await supabase.auth.refreshSession();
+        uploadResult = await executeUpload();
+      }
+
+      if (uploadResult.error) {
+        throw new Error(`Image upload failed: ${uploadResult.error.message}`);
+      }
 
       const { data: { publicUrl } } = supabase.storage
         .from('furniture-images')
@@ -116,7 +164,7 @@ export default function InventoryModal({ isOpen, onClose, onSuccess, editingItem
       if (imageFile) {
         setUploading(true);
         try {
-            imageUrl = await uploadImage(imageFile);
+            imageUrl = await safeUpload(imageFile);
         } finally {
             setUploading(false);
         }
