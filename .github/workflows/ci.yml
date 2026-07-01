@@ -34,3 +34,14 @@ jobs:
 
       - name: Build
         run: pnpm build
+        env:
+          # Build-time-only placeholders so Next.js can statically analyze API
+          # routes that instantiate a Supabase client at module scope. Real
+          # values are injected by Vercel at deploy time and are never read
+          # from CI.
+          NEXT_PUBLIC_SUPABASE_URL: https://placeholder.supabase.co
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: placeholder-anon-key
+          SUPABASE_SERVICE_ROLE_KEY: placeholder-service-role-key
+          SUPABASE_JWT_SECRET: placeholder-jwt-secret
+          UPSTASH_REDIS_REST_URL: https://placeholder.upstash.io
+          UPSTASH_REDIS_REST_TOKEN: placeholder-redis-token
