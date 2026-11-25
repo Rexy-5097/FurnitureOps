@@ -72,7 +72,7 @@ const COPY: Record<SiteKind, SiteCopy> = {
     utility: ['Every piece tracked to the last unit', 'Live stock from the showroom floor'],
     footerColumns: [
       { title: 'Shop', links: shopLinks('/shop') },
-      { title: 'Studio', links: [['Dashboard', '/dashboard'], ['Sign in', '/login']] },
+      { title: 'Studio', links: [['Dashboard', '/dashboard'], ['Admin console', '/admin'], ['Sign in', '/login']] },
       { title: 'More', links: [['Design lab', '/lab'], ['Syllabus map', '/lab/syllabus']] },
     ],
     footerNote: ['© 2026 FurnitureOps. All rights reserved.', 'Honest furniture, honest stock.'],
@@ -81,12 +81,10 @@ const COPY: Record<SiteKind, SiteCopy> = {
 
 export default function SiteShell({
   site,
-  fontClasses,
   labRole = 'guest',
   children,
 }: {
   site: SiteKind;
-  fontClasses: string;
   /** Lab only: mock role from the lab session cookie. */
   labRole?: Role;
   children: ReactNode;
@@ -95,7 +93,7 @@ export default function SiteShell({
     <SiteProvider kind={site}>
       <ThemeProvider>
         {(theme) => (
-          <div data-theme={theme} className={cx('lab-root flex min-h-screen flex-col bg-lab-paper font-body text-lab-ink antialiased', fontClasses)}>
+          <div data-theme={theme} className='lab-root flex min-h-screen flex-col bg-lab-paper font-body text-lab-ink antialiased'>
             <a href="#site-main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-lab-forest focus:px-4 focus:py-2 focus:text-lab-on-dark">
               Skip to content
             </a>

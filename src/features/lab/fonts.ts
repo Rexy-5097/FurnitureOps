@@ -1,6 +1,6 @@
 import { Cormorant_Garamond, Manrope } from 'next/font/google';
 
-// Declared once and shared by the store and lab layouts. next/font self-hosts
+// Imported only by the root layout, which puts the variables on <html>. next/font self-hosts
 // both families at build time: no layout shift, no Google request at runtime.
 const display = Cormorant_Garamond({
   subsets: ['latin'],

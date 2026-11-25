@@ -1,19 +1,20 @@
 import type { Metadata, Viewport } from "next";
 import PageTransition from "@/components/layout/PageTransition";
 import QueryProvider from "@/providers/QueryProvider";
+import { fontClasses } from "@/features/lab/fonts";
 import "./globals.css";
+import "@/features/lab/lab.css";
 
 export const viewport: Viewport = {
-  themeColor: '#000000',
+  themeColor: '#fff6ea',
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
+  // Pinch-zoom stays enabled for accessibility (WCAG 1.4.4).
 };
 
 export const metadata: Metadata = {
   title: "FurnitureOps",
-  description: "Premium Inventory Management System",
+  description: "Hand-picked furniture with live stock from the showroom floor.",
   manifest: '/manifest.json',
 };
 
@@ -23,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-black" suppressHydrationWarning>
-      <body className="font-sans min-h-screen bg-black text-white antialiased selection:bg-white/20" suppressHydrationWarning>
+    <html lang="en" className={fontClasses} suppressHydrationWarning>
+      <body className="min-h-screen font-body antialiased" suppressHydrationWarning>
         <QueryProvider>
           <PageTransition>{children}</PageTransition>
         </QueryProvider>

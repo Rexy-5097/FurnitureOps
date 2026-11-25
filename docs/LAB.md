@@ -68,6 +68,8 @@ The storefront design now also powers the live site, reading real Supabase inven
 | `/shop` | Server-rendered first paint, then React Query refreshes from `/api/inventory` every 30 s |
 | `/shop/[id]` | Product page with `generateMetadata` |
 | `/login`, `/dashboard` | Restyled; Supabase sign-in, realtime updates, photo search, uploads and admin tools unchanged |
+| `/admin`, `/admin/audit` | Admin console and audit log on real data from `/api/admin/audit-logs` (admins only; 403 shows a notice) |
+| 404, root error, root loading | Branded standalone screens (`StandaloneFrame`) |
 
 Shared pieces live in `src/features/lab` (components, tokens, fonts) and `src/features/store`
 (server loader and row mapping). `SiteShell` renders both sites; `SiteProvider` gives each its

@@ -182,7 +182,7 @@ export default function DashboardPage() {
         ].map(([label, value, hint]) => (
           <div key={label} className="rounded-2xl bg-lab-surface p-5">
             <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-lab-muted">{label}</p>
-            <p className="mt-2 font-display text-[2.2rem] leading-none tabular-nums">{isLoading ? '–' : value}</p>
+            <p className="mt-2 font-display text-[2.2rem] leading-none tabular-nums">{isLoading || error ? '–' : value}</p>
             <p className="mt-1 text-xs text-lab-muted">{hint}</p>
           </div>
         ))}

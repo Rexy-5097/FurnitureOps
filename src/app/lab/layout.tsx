@@ -1,9 +1,7 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import SiteShell from '@/features/lab/components/SiteShell';
-import { fontClasses } from '@/features/lab/fonts';
 import { getLabRole } from '@/features/lab/session';
-import '@/features/lab/lab.css';
 
 /**
  * Layout route for /lab (INT257 Unit I). It wraps every lab page and also
@@ -20,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function LabLayout({ children, modal }: { children: ReactNode; modal: ReactNode }) {
   return (
-    <SiteShell site="lab" labRole={getLabRole()} fontClasses={fontClasses}>
+    <SiteShell site="lab" labRole={getLabRole()}>
       {children}
       {modal}
     </SiteShell>

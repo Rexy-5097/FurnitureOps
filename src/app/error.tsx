@@ -1,45 +1,38 @@
 'use client';
 
+import Link from 'next/link';
 import { useEffect } from 'react';
-import { AlertTriangle } from 'lucide-react';
+import StandaloneFrame from '@/features/lab/components/StandaloneFrame';
+import { buttonClass } from '@/features/lab/components/StateViews';
 
-export default function Error({
-  error,
-  reset,
-}: {
-  error: Error & { digest?: string };
-  reset: () => void;
-}) {
+/** Root error boundary: catches failures in layouts below the root. */
+export default function Error({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
   useEffect(() => {
     // Log the error to an error reporting service
     console.error(error);
   }, [error]);
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-gray-50 p-6 text-center">
-      <div className="w-full max-w-md rounded-2xl bg-white p-8 shadow-xl ring-1 ring-gray-200">
-        <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-red-100">
-          <AlertTriangle className="h-6 w-6 text-red-600" />
-        </div>
-        
-        <h2 className="mb-2 text-xl font-bold text-gray-900">Something went wrong</h2>
-        
-        <p className="mb-6 text-sm text-gray-500">
-            {error.message.length > 150 
-                ? `${error.message.substring(0, 150)}...` 
-                : error.message}
+    <StandaloneFrame>
+      <div className="max-w-xl">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-lab-danger">Something went wrong</p>
+        <h1 className="mt-3 text-[clamp(3rem,6vw,4.6rem)]">
+          We dropped
+          <em className="block italic text-lab-accent">something heavy.</em>
+        </h1>
+        <p className="mt-6 text-[17px] leading-relaxed text-lab-muted">
+          {error.message && error.message.length <= 150 ? error.message : 'An unexpected error stopped this page from loading.'}
         </p>
-
-        <button
-          onClick={
-            // Attempt to recover by trying to re-render the segment
-            () => reset()
-          }
-          className="w-full rounded-lg bg-black px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black transition-all"
-        >
-          Try Again
-        </button>
+        {error.digest && <p className="mt-2 font-mono text-xs text-lab-muted">ref {error.digest}</p>}
+        <div className="mt-10 flex flex-wrap gap-3">
+          <button type="button" onClick={() => reset()} className={buttonClass.primary}>
+            Try again
+          </button>
+          <Link href="/" className={buttonClass.ghost}>
+            Back to home
+          </Link>
+        </div>
       </div>
-    </div>
+    </StandaloneFrame>
   );
 }

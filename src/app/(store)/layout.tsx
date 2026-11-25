@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import SiteShell from '@/features/lab/components/SiteShell';
-import { fontClasses } from '@/features/lab/fonts';
-import '@/features/lab/lab.css';
 
 /**
  * Layout for the live site: home, shop, product pages, login and the studio
@@ -16,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function StoreLayout({ children }: { children: ReactNode }) {
   return (
-    <SiteShell site="store" fontClasses={fontClasses}>
+    <SiteShell site="store">
       {children}
     </SiteShell>
   );
