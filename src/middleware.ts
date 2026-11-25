@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
+import { can, isRole, LAB_ROLE_COOKIE } from '@/features/lab/auth';
 
 function applySecurityHeaders(response: NextResponse): NextResponse {
   // 🛡️ Security Headers
@@ -105,6 +106,17 @@ export async function middleware(request: NextRequest) {
         }
     } catch (e) {
         // Ignore decode errors here, let API fail it proper.
+    }
+  }
+
+  // 4️⃣ Lab sandbox: protected route + role-based access for /lab/studio
+  if (path.startsWith('/lab/studio')) {
+    const role = request.cookies.get(LAB_ROLE_COOKIE)?.value;
+    if (!can(isRole(role) ? role : 'guest', 'create')) {
+      const signIn = new URL('/lab/sign-in', request.url);
+      signIn.searchParams.set('next', path);
+      if (isRole(role)) signIn.searchParams.set('denied', role);
+      return applySecurityHeaders(NextResponse.redirect(signIn));
     }
   }
 

@@ -1,0 +1,100 @@
+/* FurnitureOps Lab — soft retail theme tokens (RGB triplets for Tailwind alpha). */
+
+.lab-root {
+  --lab-paper: 255 246 234; /* cream page */
+  --lab-surface: 255 255 255; /* white cards */
+  --lab-ink: 41 39 37;
+  --lab-muted: 112 106 99;
+  --lab-line: 234 223 208;
+  --lab-accent: 150 84 52; /* terracotta */
+  --lab-moss: 86 112 92; /* in-stock green */
+  --lab-danger: 170 60 48;
+  --lab-plum: 64 26 34; /* hero */
+  --lab-forest: 30 56 44; /* bar, footer, primary buttons */
+  --lab-sage: 222 228 218; /* benefit tiles */
+  --lab-sand: 236 229 218; /* benefit tiles */
+  --lab-on-dark: 255 246 234;
+  color-scheme: light;
+}
+
+.lab-root[data-theme='dark'] {
+  --lab-paper: 24 22 20;
+  --lab-surface: 34 32 29;
+  --lab-ink: 240 233 222;
+  --lab-muted: 166 157 145;
+  --lab-line: 58 53 47;
+  --lab-accent: 218 150 112;
+  --lab-moss: 150 180 156;
+  --lab-danger: 228 120 104;
+  --lab-plum: 52 22 29;
+  --lab-forest: 21 40 32;
+  --lab-sage: 38 46 40;
+  --lab-sand: 44 40 35;
+  --lab-on-dark: 255 246 234;
+  color-scheme: dark;
+}
+
+/* Display type: every page title and section heading uses the serif.
+   Cormorant runs small, so it gets a touch more size and tighter tracking. */
+.lab-root h1,
+.lab-root h2,
+.lab-root .font-display {
+  font-family: var(--font-lab-display), Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  font-feature-settings: 'kern', 'liga', 'dlig';
+  font-variant-numeric: lining-nums; /* even figures for prices and stats */
+}
+
+.lab-root h1 {
+  line-height: 1;
+}
+
+.lab-root .font-brand {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Manrope for UI copy: slightly tighter for a crisper feel. */
+.lab-root {
+  font-feature-settings: 'ss01', 'cv11';
+  letter-spacing: -0.005em;
+}
+
+.lab-root ::selection {
+  background: rgb(var(--lab-accent) / 0.22);
+}
+
+.lab-root :focus-visible {
+  outline: 2px solid rgb(var(--lab-accent));
+  outline-offset: 3px;
+}
+
+/* Hide the scrollbar on horizontally scrolling chip rows */
+.lab-scroll-x {
+  scrollbar-width: none;
+}
+.lab-scroll-x::-webkit-scrollbar {
+  display: none;
+}
+
+.lab-rise {
+  animation: lab-rise 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes lab-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lab-rise {
+    animation: none;
+  }
+}

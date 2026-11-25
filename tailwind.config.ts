@@ -6,9 +6,35 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/lib/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/features/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
+      // Lab design tokens — values live in src/features/lab/lab.css so the
+      // light/dark theme can swap them at runtime via a data-theme attribute.
+      colors: {
+        lab: {
+          paper: 'rgb(var(--lab-paper) / <alpha-value>)',
+          surface: 'rgb(var(--lab-surface) / <alpha-value>)',
+          ink: 'rgb(var(--lab-ink) / <alpha-value>)',
+          muted: 'rgb(var(--lab-muted) / <alpha-value>)',
+          line: 'rgb(var(--lab-line) / <alpha-value>)',
+          accent: 'rgb(var(--lab-accent) / <alpha-value>)',
+          moss: 'rgb(var(--lab-moss) / <alpha-value>)',
+          danger: 'rgb(var(--lab-danger) / <alpha-value>)',
+          plum: 'rgb(var(--lab-plum) / <alpha-value>)',
+          forest: 'rgb(var(--lab-forest) / <alpha-value>)',
+          sage: 'rgb(var(--lab-sage) / <alpha-value>)',
+          sand: 'rgb(var(--lab-sand) / <alpha-value>)',
+          'on-dark': 'rgb(var(--lab-on-dark) / <alpha-value>)',
+        },
+      },
+      fontFamily: {
+        // Cormorant Garamond for display + wordmark, Manrope for UI and body copy.
+        display: ['var(--font-lab-display)', 'Georgia', 'serif'],
+        body: ['var(--font-lab-body)', 'system-ui', 'sans-serif'],
+        brand: ['var(--font-lab-display)', 'Georgia', 'serif'],
+      },
       animation: {
         'float': 'float 6s ease-in-out infinite',
         'drift': 'drift 8s ease-in-out infinite',
