@@ -1,11 +1,11 @@
 {
   "name": "FurnitureOps",
   "short_name": "FurnitureOps",
-  "description": "Furniture Inventory System",
+  "description": "Hand-picked furniture with live stock from the showroom floor.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "background_color": "#fff6ea",
+  "theme_color": "#fff6ea",
   "orientation": "portrait",
   "icons": [
     {

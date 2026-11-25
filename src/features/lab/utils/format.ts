@@ -5,20 +5,25 @@ import type { Currency } from '../state/moodboard-store';
  * array methods, no mutation. Safe to import on server or client.
  */
 
-// Indicative rates for display only. Prices are stored in INR.
+// Indicative rates for display only, expressed as units per 1 INR.
 const RATES: Record<Currency, { rate: number; locale: string }> = {
   INR: { rate: 1, locale: 'en-IN' },
   USD: { rate: 1 / 84, locale: 'en-US' },
   EUR: { rate: 1 / 91, locale: 'de-DE' },
 };
 
-export const formatPrice = (amountInInr: number, currency: Currency = 'INR') => {
+/**
+ * Formats a stored price for display.
+ * `base` is the currency the amount is stored in (lab data: INR, live data: USD).
+ */
+export const formatPrice = (amount: number, currency: Currency = 'INR', base: Currency = 'INR') => {
   const { rate, locale } = RATES[currency];
+  const converted = currency === base ? amount : (amount / RATES[base].rate) * rate;
   return new Intl.NumberFormat(locale, {
     style: 'currency',
     currency,
-    maximumFractionDigits: 0,
-  }).format(amountInInr * rate);
+    maximumFractionDigits: currency === base && !Number.isInteger(amount) ? 2 : 0,
+  }).format(converted);
 };
 
 export const formatDate = (iso: string) =>

@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import { AuditLog } from '@/types/database';
 import { X, Shield, AlertTriangle, Settings, Loader2 } from 'lucide-react';
-import GlassCard from '@/components/ui/GlassCard';
 
 interface AdminToolsProps {
   isOpen: boolean;
@@ -103,35 +102,35 @@ export default function AdminTools({ isOpen, onClose, onSuccess }: AdminToolsPro
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm animate-in fade-in duration-200">
-      <div className="w-full max-w-2xl overflow-hidden rounded-2xl border border-white/10 bg-black/90 shadow-2xl animate-in zoom-in-95 duration-200 flex flex-col max-h-[85vh]">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4 backdrop-blur-sm animate-in fade-in duration-200">
+      <div className="w-full max-w-2xl overflow-hidden rounded-[24px] border border-lab-line bg-lab-paper shadow-2xl animate-in zoom-in-95 duration-200 flex flex-col max-h-[85vh]">
         
         {/* Header */}
-        <div className="flex items-center justify-between border-b border-white/10 px-6 py-4 bg-white/5">
+        <div className="flex items-center justify-between border-b border-lab-line px-6 py-4 bg-lab-surface">
           <div className="flex items-center gap-2">
-            <Settings className="h-5 w-5 text-white/70" />
-            <h2 className="text-lg font-semibold text-white">Admin Console</h2>
+            <Settings className="h-5 w-5 text-lab-muted" />
+            <h2 className="font-display text-[1.9rem] leading-none text-lab-ink">Admin console</h2>
           </div>
           <button
             onClick={onClose}
-            className="rounded-full p-2 text-white/40 hover:bg-white/10 hover:text-white transition-colors"
+            className="rounded-full p-2 text-lab-muted hover:bg-lab-ink/[0.06] hover:text-lab-ink transition-colors"
           >
             <X className="h-5 w-5" />
           </button>
         </div>
 
         {/* Tabs */}
-        <div className="flex border-b border-white/10">
+        <div className="flex border-b border-lab-line">
             <button
                 onClick={() => setActiveTab('audit')}
-                className={`flex-1 flex items-center justify-center gap-2 py-3 text-sm font-medium transition-colors ${activeTab === 'audit' ? 'border-b-2 border-amber-500 text-amber-400 bg-amber-500/10' : 'text-white/40 hover:text-white hover:bg-white/5'}`}
+                className={`flex-1 flex items-center justify-center gap-2 py-3 text-sm font-medium transition-colors ${activeTab === 'audit' ? 'border-b-2 border-lab-accent text-lab-accent bg-lab-accent/10' : 'text-lab-muted hover:text-lab-ink hover:bg-lab-surface'}`}
             >
                 <Shield className="h-4 w-4" />
                 Audit Logs
             </button>
             <button
                 onClick={() => setActiveTab('danger')}
-                className={`flex-1 flex items-center justify-center gap-2 py-3 text-sm font-medium transition-colors ${activeTab === 'danger' ? 'border-b-2 border-red-500 text-red-500 bg-red-500/10' : 'text-white/40 hover:text-red-400 hover:bg-white/5'}`}
+                className={`flex-1 flex items-center justify-center gap-2 py-3 text-sm font-medium transition-colors ${activeTab === 'danger' ? 'border-b-2 border-lab-danger text-lab-danger bg-lab-danger/10' : 'text-lab-muted hover:text-lab-danger hover:bg-lab-surface'}`}
             >
                 <AlertTriangle className="h-4 w-4" />
                 Danger Zone
@@ -146,40 +145,40 @@ export default function AdminTools({ isOpen, onClose, onSuccess }: AdminToolsPro
                 <div className="space-y-4">
                     {loading && (
                         <div className="flex justify-center py-8">
-                            <Loader2 className="h-8 w-8 animate-spin text-white/40" />
+                            <Loader2 className="h-8 w-8 animate-spin text-lab-muted" />
                         </div>
                     )}
 
                     {error && (
-                        <div className="p-3 text-sm text-red-400 bg-red-500/10 border border-red-500/20 rounded-lg">
+                        <div className="p-3 text-sm text-lab-danger bg-lab-danger/10 border border-lab-danger/30 rounded-lg">
                             {error}
                         </div>
                     )}
 
                     {!loading && !error && logs.length === 0 && (
-                        <p className="text-center text-white/40 py-8">No audit logs found.</p>
+                        <p className="text-center text-lab-muted py-8">No audit logs found.</p>
                     )}
 
                     {!loading && !error && logs.length > 0 && (
-                        <div className="overflow-hidden rounded-lg border border-white/10 bg-white/5">
-                            <table className="min-w-full divide-y divide-white/10">
-                                <thead className="bg-white/5">
+                        <div className="overflow-hidden rounded-lg border border-lab-line bg-lab-surface">
+                            <table className="min-w-full divide-y divide-lab-line">
+                                <thead className="bg-lab-surface">
                                     <tr>
-                                        <th className="px-4 py-3 text-left text-xs font-medium text-white/40 uppercase tracking-wider">Time</th>
-                                        <th className="px-4 py-3 text-left text-xs font-medium text-white/40 uppercase tracking-wider">Action</th>
-                                        <th className="px-4 py-3 text-left text-xs font-medium text-white/40 uppercase tracking-wider">Actor ID</th>
+                                        <th className="px-4 py-3 text-left text-xs font-medium text-lab-muted uppercase tracking-wider">Time</th>
+                                        <th className="px-4 py-3 text-left text-xs font-medium text-lab-muted uppercase tracking-wider">Action</th>
+                                        <th className="px-4 py-3 text-left text-xs font-medium text-lab-muted uppercase tracking-wider">Actor ID</th>
                                     </tr>
                                 </thead>
-                                <tbody className="divide-y divide-white/10">
+                                <tbody className="divide-y divide-lab-line">
                                     {logs.map((log) => (
-                                        <tr key={log.id} className="hover:bg-white/5 transition-colors">
-                                            <td className="px-4 py-2 text-xs text-white/60 whitespace-nowrap">
+                                        <tr key={log.id} className="hover:bg-lab-ink/[0.03] transition-colors">
+                                            <td className="px-4 py-2 text-xs text-lab-muted whitespace-nowrap">
                                                 {new Date(log.timestamp).toLocaleString()}
                                             </td>
-                                            <td className="px-4 py-2 text-sm font-medium text-white">
+                                            <td className="px-4 py-2 text-sm font-medium text-lab-ink">
                                                 {log.action}
                                             </td>
-                                            <td className="px-4 py-2 text-xs text-white/40 font-mono truncate max-w-[100px]">
+                                            <td className="px-4 py-2 text-xs text-lab-muted font-mono truncate max-w-[100px]">
                                                 {log.actor_id}
                                             </td>
                                         </tr>
@@ -194,15 +193,15 @@ export default function AdminTools({ isOpen, onClose, onSuccess }: AdminToolsPro
             {/* DANGER ZONE TAB */}
             {activeTab === 'danger' && (
                 <div className="max-w-md mx-auto space-y-6 text-center pt-4">
-                    <div className="p-4 bg-red-500/10 border border-red-500/20 rounded-xl space-y-4">
+                    <div className="p-4 bg-lab-danger/10 border border-lab-danger/30 rounded-xl space-y-4">
                         <div className="flex justify-center">
-                            <div className="p-3 bg-red-500/20 rounded-full">
-                                <AlertTriangle className="h-8 w-8 text-red-500" />
+                            <div className="p-3 bg-lab-danger/15 rounded-full">
+                                <AlertTriangle className="h-8 w-8 text-lab-danger" />
                             </div>
                         </div>
                         <div>
-                            <h3 className="text-lg font-bold text-red-400">System Kill Switch</h3>
-                            <p className="text-sm text-red-200/60 mt-1">
+                            <h3 className="text-lg font-bold text-lab-danger">System Kill Switch</h3>
+                            <p className="text-sm text-lab-danger/80 mt-1">
                                 This action will <strong>permanently delete all inventory items</strong>. 
                                 Audit logs will be preserved. This cannot be undone.
                             </p>
@@ -210,12 +209,12 @@ export default function AdminTools({ isOpen, onClose, onSuccess }: AdminToolsPro
                     </div>
 
                     <div className="space-y-3">
-                        <label className="block text-sm font-medium text-white/60">
+                        <label className="block text-sm font-medium text-lab-muted">
                             Type <code>DELETE-ALL-INVENTORY-PERMANENTLY</code> to confirm:
                         </label>
                         <input 
                             type="text" 
-                            className="w-full text-center font-mono text-sm p-2 bg-black/50 border border-red-900/50 rounded-lg text-red-400 focus:ring-2 focus:ring-red-500/50 outline-none"
+                            className="w-full text-center font-mono text-sm p-3 bg-lab-surface border border-lab-danger/40 rounded-xl text-lab-danger focus:border-lab-danger outline-none"
                             placeholder="Type confirmation code"
                             value={killSwitchInput}
                             onChange={(e) => setKillSwitchInput(e.target.value)}
@@ -225,7 +224,7 @@ export default function AdminTools({ isOpen, onClose, onSuccess }: AdminToolsPro
                     <button
                         onClick={handleKillSwitch}
                         disabled={killSwitchInput !== 'DELETE-ALL-INVENTORY-PERMANENTLY' || killSwitchLoading}
-                        className="w-full py-3 bg-red-600 text-white font-bold rounded-lg shadow-lg shadow-red-600/20 hover:bg-red-700 focus:ring-4 focus:ring-red-900/50 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                        className="w-full py-3 bg-lab-danger text-white font-bold rounded-full hover:opacity-90 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                     >
                         {killSwitchLoading && <Loader2 className="h-5 w-5 animate-spin" />}
                         RESET SYSTEM
