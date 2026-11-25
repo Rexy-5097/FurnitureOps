@@ -204,7 +204,7 @@ export default function InventoryModal({ isOpen, onClose, onSuccess, editingItem
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="absolute inset-0 bg-black/80 backdrop-blur-sm"
+            className="absolute inset-0 bg-lab-ink/40 backdrop-blur-sm"
           />
           
           <motion.div 
@@ -212,16 +212,16 @@ export default function InventoryModal({ isOpen, onClose, onSuccess, editingItem
             animate={{ opacity: 1, scale: 1, y: 0, filter: 'blur(0px)' }}
             exit={{ opacity: 0, scale: 0.95, y: 20, filter: 'blur(4px)' }}
             transition={{ type: "spring", duration: 0.5, bounce: 0.3 }}
-            className="relative w-full max-w-lg overflow-hidden rounded-2xl border border-white/10 bg-black/90 shadow-2xl shadow-amber-900/10"
+            className="relative w-full max-w-lg overflow-hidden rounded-[24px] border border-lab-line bg-lab-paper shadow-2xl"
           >
             {/* Header */}
-            <div className="flex items-center justify-between border-b border-white/10 px-6 py-4 bg-white/5">
-              <h2 className="text-lg font-semibold text-white">
-                {editingItem ? 'Edit Item' : 'Add New Item'}
+            <div className="flex items-center justify-between border-b border-lab-line px-6 py-4 bg-lab-surface">
+              <h2 className="font-display text-[1.9rem] leading-none text-lab-ink">
+                {editingItem ? 'Edit piece' : 'Add a piece'}
               </h2>
               <button
                 onClick={onClose}
-                className="rounded-full p-2 text-white/40 hover:bg-white/10 hover:text-white transition-colors"
+                className="rounded-full p-2 text-lab-muted hover:bg-lab-ink/[0.06] hover:text-lab-ink transition-colors"
                 disabled={isBusy}
               >
                 <X className="h-5 w-5" />
@@ -233,10 +233,10 @@ export default function InventoryModal({ isOpen, onClose, onSuccess, editingItem
                 
               {/* Image Picker */}
               <div className="space-y-2">
-                <label className="block text-sm font-medium text-white/70">Item Image</label>
+                <label className="block text-sm font-semibold text-lab-ink">Photo</label>
                 <div 
                     onClick={() => !isBusy && fileInputRef.current?.click()}
-                    className={`group relative flex aspect-video w-full cursor-pointer flex-col items-center justify-center overflow-hidden rounded-lg border-2 border-dashed border-white/10 bg-white/5 transition-colors hover:bg-white/10 ${isBusy ? 'cursor-not-allowed opacity-50' : ''}`}
+                    className={`group relative flex aspect-video w-full cursor-pointer flex-col items-center justify-center overflow-hidden rounded-lg border-2 border-dashed border-lab-line bg-lab-surface transition-colors hover:bg-lab-ink/[0.06] ${isBusy ? 'cursor-not-allowed opacity-50' : ''}`}
                 >
                     {imagePreview ? (
                         <Image 
@@ -246,15 +246,15 @@ export default function InventoryModal({ isOpen, onClose, onSuccess, editingItem
                             className="object-cover" 
                         />
                     ) : (
-                        <div className="flex flex-col items-center space-y-2 text-white/40">
+                        <div className="flex flex-col items-center space-y-2 text-lab-muted">
                             <Camera className="h-8 w-8" />
                             <span className="text-xs font-medium">Click to upload</span>
                         </div>
                     )}
                     
                     {/* Overlay on hover/preview */}
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity group-hover:opacity-100">
-                        <Upload className="h-6 w-6 text-white" />
+                    <div className="absolute inset-0 flex items-center justify-center bg-lab-ink/40 opacity-0 transition-opacity group-hover:opacity-100">
+                        <Upload className="h-6 w-6 text-lab-ink" />
                     </div>
                 </div>
                 <input 
@@ -270,13 +270,13 @@ export default function InventoryModal({ isOpen, onClose, onSuccess, editingItem
               <div className="grid grid-cols-2 gap-4">
                 {/* Name */}
                 <div className="col-span-2 space-y-1">
-                    <label className="text-sm font-medium text-white/70">Name</label>
+                    <label className="text-sm font-semibold text-lab-ink">Name</label>
                     <input
                         type="text"
                         required
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        className="w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm text-white focus:border-amber-500 focus:outline-none focus:ring-1 focus:ring-amber-500 placeholder:text-white/20 transition-all"
+                        className="w-full h-11 rounded-xl border border-lab-line bg-lab-surface px-4 text-sm text-lab-ink focus:border-lab-ink focus:outline-none placeholder:text-lab-muted/60 transition-all"
                         placeholder="e.g. Eames Lounge Chair"
                         disabled={isBusy}
                     />
@@ -284,12 +284,12 @@ export default function InventoryModal({ isOpen, onClose, onSuccess, editingItem
 
                 {/* Origin */}
                 <div className="space-y-1">
-                    <label className="text-sm font-medium text-white/70">Origin</label>
+                    <label className="text-sm font-semibold text-lab-ink">Origin</label>
                     <input
                         type="text"
                         value={origin}
                         onChange={(e) => setOrigin(e.target.value)}
-                        className="w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm text-white focus:border-amber-500 focus:outline-none focus:ring-1 focus:ring-amber-500 placeholder:text-white/20 transition-all"
+                        className="w-full h-11 rounded-xl border border-lab-line bg-lab-surface px-4 text-sm text-lab-ink focus:border-lab-ink focus:outline-none placeholder:text-lab-muted/60 transition-all"
                         placeholder="e.g. Denmark"
                         disabled={isBusy}
                     />
@@ -297,7 +297,7 @@ export default function InventoryModal({ isOpen, onClose, onSuccess, editingItem
 
                 {/* Price */}
                 <div className="space-y-1">
-                    <label className="text-sm font-medium text-white/70">Price ($)</label>
+                    <label className="text-sm font-semibold text-lab-ink">Price (USD)</label>
                     <input
                         type="number"
                         required
@@ -305,7 +305,7 @@ export default function InventoryModal({ isOpen, onClose, onSuccess, editingItem
                         step="0.01"
                         value={price}
                         onChange={(e) => setPrice(e.target.value === '' ? '' : Number(e.target.value))}
-                        className="w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm text-white focus:border-amber-500 focus:outline-none focus:ring-1 focus:ring-amber-500 placeholder:text-white/20 transition-all"
+                        className="w-full h-11 rounded-xl border border-lab-line bg-lab-surface px-4 text-sm text-lab-ink focus:border-lab-ink focus:outline-none placeholder:text-lab-muted/60 transition-all"
                         placeholder="0.00"
                         disabled={isBusy}
                     />
@@ -313,7 +313,7 @@ export default function InventoryModal({ isOpen, onClose, onSuccess, editingItem
 
                 {/* Quantity */}
                 <div className="col-span-2 space-y-1">
-                    <label className="text-sm font-medium text-white/70">Quantity Available</label>
+                    <label className="text-sm font-semibold text-lab-ink">Quantity Available</label>
                     <input
                         type="number"
                         required
@@ -321,7 +321,7 @@ export default function InventoryModal({ isOpen, onClose, onSuccess, editingItem
                         step="1"
                         value={quantity}
                         onChange={(e) => setQuantity(e.target.value === '' ? '' : Number(e.target.value))}
-                        className="w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm text-white focus:border-amber-500 focus:outline-none focus:ring-1 focus:ring-amber-500 placeholder:text-white/20 transition-all"
+                        className="w-full h-11 rounded-xl border border-lab-line bg-lab-surface px-4 text-sm text-lab-ink focus:border-lab-ink focus:outline-none placeholder:text-lab-muted/60 transition-all"
                         placeholder="0"
                         disabled={isBusy}
                     />
@@ -332,21 +332,21 @@ export default function InventoryModal({ isOpen, onClose, onSuccess, editingItem
                 <motion.div 
                   initial={{ opacity: 0, height: 0 }}
                   animate={{ opacity: 1, height: 'auto' }}
-                  className="rounded-md bg-red-500/10 p-3 text-sm text-red-300 border border-red-500/20"
+                  className="rounded-md bg-lab-danger/10 p-3 text-sm text-lab-danger border border-lab-danger/30"
                 >
                     {error}
                 </motion.div>
               )}
 
               {/* Footer */}
-              <div className="flex items-center justify-between pt-4 border-t border-white/10">
+              <div className="flex items-center justify-between pt-4 border-t border-lab-line">
                 <div>
                     {editingItem && (
                         <button
                             type="button"
                             onClick={handleDelete}
                             disabled={isBusy}
-                            className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-red-400 hover:text-red-300 hover:bg-red-500/10 rounded-lg transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
+                            className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-lab-danger hover:text-lab-danger hover:bg-lab-danger/10 rounded-full transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
                         >
                             <Trash2 className="h-4 w-4" />
                             Delete
@@ -358,7 +358,7 @@ export default function InventoryModal({ isOpen, onClose, onSuccess, editingItem
                     <button
                         type="button"
                         onClick={onClose}
-                        className="px-4 py-2 text-sm font-medium text-white/70 hover:bg-white/10 rounded-lg transition-colors"
+                        className="px-4 py-2 text-sm font-medium text-lab-muted hover:bg-lab-ink/[0.06] rounded-full transition-colors"
                         disabled={isBusy}
                     >
                         Cancel
@@ -366,7 +366,7 @@ export default function InventoryModal({ isOpen, onClose, onSuccess, editingItem
                     <button
                         type="submit"
                         disabled={isBusy}
-                        className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-amber-600 hover:bg-amber-500 rounded-lg transition-colors disabled:opacity-70 disabled:cursor-not-allowed shadow-lg shadow-amber-600/20"
+                        className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-lab-on-dark bg-lab-forest hover:opacity-90 rounded-full transition-colors disabled:opacity-70 disabled:cursor-not-allowed "
                     >
                         {isBusy && <Loader2 className="h-4 w-4 animate-spin" />}
                         {isBusy ? 'Saving...' : 'Save Item'}

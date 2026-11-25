@@ -6,7 +6,7 @@ import { z } from 'zod';
  * Route Handlers, so the browser and the server agree on what "valid" means.
  */
 
-export const CATEGORIES = ['seating', 'tables', 'lighting', 'storage', 'beds'] as const;
+export const CATEGORIES = ['seating', 'tables', 'lighting', 'storage', 'beds', 'decor'] as const;
 export type Category = (typeof CATEGORIES)[number];
 
 export const ItemInputSchema = z.object({

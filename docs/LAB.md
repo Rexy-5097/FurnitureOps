@@ -57,3 +57,23 @@ On a Vercel preview deployment of this branch, open `<preview-url>/lab`.
 - The lab layout sets `robots: noindex`.
 - When the redesign is approved, the components in `src/features/lab` can be wired to
   the real Supabase hooks (`useInventory`) in place of the lab store.
+
+## The live site uses this design
+
+The storefront design now also powers the live site, reading real Supabase inventory:
+
+| Route | Data |
+| --- | --- |
+| `/` | Storefront home, server-rendered per request from `inventory` (cached 30 s) |
+| `/shop` | Server-rendered first paint, then React Query refreshes from `/api/inventory` every 30 s |
+| `/shop/[id]` | Product page with `generateMetadata` |
+| `/login`, `/dashboard` | Restyled; Supabase sign-in, realtime updates, photo search, uploads and admin tools unchanged |
+
+Shared pieces live in `src/features/lab` (components, tokens, fonts) and `src/features/store`
+(server loader and row mapping). `SiteShell` renders both sites; `SiteProvider` gives each its
+own product links, price currency (lab INR, live USD) and moodboard.
+
+Live inventory has no category, material or colour columns yet. Category is inferred from the
+piece name (`src/features/lab/categories.ts`), colour is a stable tone per id, and empty fields
+are hidden. In local development without `SUPABASE_SERVICE_ROLE_KEY`, the store falls back to the
+lab sample catalogue and shows a banner; this never happens in production.

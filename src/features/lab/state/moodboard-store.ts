@@ -1,18 +1,22 @@
-import { create } from 'zustand';
+import { createStore, useStore, type StoreApi } from 'zustand';
 import { persist } from 'zustand/middleware';
 import type { LabItem } from '../schema';
+import { useSite } from './site-context';
 
 /**
  * Zustand for lightweight global client state (INT252 Unit VI).
- * The moodboard is shared by cards, the detail page, the quick-view modal and
- * the header counter: components that are far apart in the tree.
+ * The moodboard is shared by cards, the detail page, the drawer and the
+ * header counter: components that are far apart in the tree.
  * Server data stays in React Query; this store only holds user choices.
+ *
+ * Each site (lab sandbox, live store) gets its own persisted store, chosen by
+ * SiteProvider, so sample pieces never mix with real ones.
  */
 
 export type Currency = 'INR' | 'USD' | 'EUR';
-type Pinned = Pick<LabItem, 'id' | 'name' | 'price' | 'tone' | 'category'>;
+export type Pinned = Pick<LabItem, 'id' | 'name' | 'price' | 'tone' | 'category'> & { image_url?: string | null };
 
-type MoodboardState = {
+export type MoodboardState = {
   pinned: Pinned[];
   currency: Currency;
   isOpen: boolean;
@@ -23,30 +27,47 @@ type MoodboardState = {
   setOpen: (open: boolean) => void;
 };
 
-export const useMoodboard = create<MoodboardState>()(
-  persist(
-    (set) => ({
-      pinned: [],
-      currency: 'INR',
-      isOpen: false,
-      // Immutable updates: always return new arrays.
-      toggle: ({ id, name, price, tone, category }) =>
-        set(({ pinned }) => ({
-          pinned: pinned.some((p) => p.id === id)
-            ? pinned.filter((p) => p.id !== id)
-            : [...pinned, { id, name, price, tone, category }],
-        })),
-      remove: (id) => set(({ pinned }) => ({ pinned: pinned.filter((p) => p.id !== id) })),
-      clear: () => set({ pinned: [] }),
-      setCurrency: (currency) => set({ currency }),
-      setOpen: (isOpen) => set({ isOpen }),
-    }),
-    {
-      name: 'fo-lab-moodboard',
-      partialize: ({ pinned, currency }) => ({ pinned, currency }),
-    },
-  ),
-);
+const createMoodboard = (storageKey: string, currency: Currency) =>
+  createStore<MoodboardState>()(
+    persist(
+      (set) => ({
+        pinned: [],
+        currency,
+        isOpen: false,
+        // Immutable updates: always return new arrays.
+        toggle: ({ id, name, price, tone, category, image_url }) =>
+          set(({ pinned }) => ({
+            pinned: pinned.some((p) => p.id === id)
+              ? pinned.filter((p) => p.id !== id)
+              : [...pinned, { id, name, price, tone, category, image_url: image_url ?? null }],
+          })),
+        remove: (id) => set(({ pinned }) => ({ pinned: pinned.filter((p) => p.id !== id) })),
+        clear: () => set({ pinned: [] }),
+        setCurrency: (next) => set({ currency: next }),
+        setOpen: (isOpen) => set({ isOpen }),
+      }),
+      { name: storageKey, partialize: ({ pinned, currency }) => ({ pinned, currency }) },
+    ),
+  );
+
+// Created lazily so server rendering never touches localStorage-backed stores.
+const stores = new Map<string, StoreApi<MoodboardState>>();
+export const getMoodboardStore = (storageKey: string, currency: Currency) => {
+  let store = stores.get(storageKey);
+  if (!store) {
+    store = createMoodboard(storageKey, currency);
+    stores.set(storageKey, store);
+  }
+  return store;
+};
+
+/** Selector hook bound to the current site's store. */
+export function useMoodboard<T>(selector: (state: MoodboardState) => T): T {
+  return useStore(useSite().moodboard, selector);
+}
+
+/** Direct access for event handlers that don't need to subscribe. */
+export const useMoodboardApi = () => useSite().moodboard;
 
 // Selectors keep subscribers narrow: a component re-renders only when its slice changes.
 export const selectIsPinned = (id: string) => (s: MoodboardState) => s.pinned.some((p) => p.id === id);

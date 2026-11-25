@@ -51,6 +51,12 @@ const GLYPHS: Record<Category, (tone: string, edge: string) => JSX.Element> = {
       <path d="M30 52v12M106 52v12" stroke={edge} strokeWidth="3" />
     </>
   ),
+  decor: (tone, edge) => (
+    <>
+      <path d="M52 16h16v6c0 4 10 10 10 24s-7 20-18 20-18-6-18-20 10-20 10-24Z" fill={tone} />
+      <path d="M52 22h16" stroke={edge} strokeWidth="2" opacity="0.5" />
+    </>
+  ),
 };
 
 /** Darkens a hex colour for legs and seams. */

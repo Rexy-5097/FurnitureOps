@@ -1,21 +1,22 @@
 'use client';
 
 import { memo } from 'react';
-import { useMoodboard, selectIsPinned } from '../state/moodboard-store';
+import { useMoodboard, selectIsPinned, type Pinned } from '../state/moodboard-store';
+import { useSite } from '../state/site-context';
 import { useHasHydrated } from '../hooks';
 import { cx, formatPrice } from '../utils/format';
-import type { LabItem } from '../schema';
 
 /** Price reads the global currency preference from Zustand. */
 export const Price = memo(function Price({ amount, className }: { amount: number; className?: string }) {
+  const { priceBase } = useSite();
   const currency = useMoodboard((s) => s.currency);
   const hydrated = useHasHydrated();
-  // Server render always uses INR; after hydration we switch to the saved currency.
-  return <span className={className}>{formatPrice(amount, hydrated ? currency : 'INR')}</span>;
+  // Server render uses the stored currency; after hydration we switch to the saved preference.
+  return <span className={className}>{formatPrice(amount, hydrated ? currency : priceBase, priceBase)}</span>;
 });
 
 type PinProps = {
-  item: Pick<LabItem, 'id' | 'name' | 'price' | 'tone' | 'category'>;
+  item: Pinned;
   variant?: 'icon' | 'button';
 };
 

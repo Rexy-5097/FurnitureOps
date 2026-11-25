@@ -2,7 +2,8 @@
 
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
-import { useMoodboard, selectTotal } from '../state/moodboard-store';
+import { useMoodboard, useMoodboardApi, selectTotal } from '../state/moodboard-store';
+import { useSite } from '../state/site-context';
 import { Price } from './client-bits';
 import { titleCase } from '../utils/format';
 
@@ -10,7 +11,8 @@ import { titleCase } from '../utils/format';
 export default function MoodboardDrawer() {
   const pinned = useMoodboard((s) => s.pinned);
   const total = useMoodboard(selectTotal);
-  const { remove, clear, setOpen } = useMoodboard.getState();
+  const { remove, clear, setOpen } = useMoodboardApi().getState();
+  const { productHref, shopHref } = useSite();
   const panelRef = useRef<HTMLDivElement>(null);
 
   // Effect with cleanup: Escape to close, lock page scroll, move focus in.
@@ -53,7 +55,7 @@ export default function MoodboardDrawer() {
           <div className="flex flex-1 flex-col items-center justify-center px-8 text-center">
             <p className="font-display text-xl">Nothing saved yet</p>
             <p className="mt-2 text-sm text-lab-muted">Tap the heart on any piece to collect it here.</p>
-            <Link href="/lab/collection" onClick={() => setOpen(false)} className="mt-6 text-sm underline underline-offset-4">
+            <Link href={shopHref} onClick={() => setOpen(false)} className="mt-6 text-sm underline underline-offset-4">
               Browse the collection
             </Link>
           </div>
@@ -64,7 +66,7 @@ export default function MoodboardDrawer() {
                 <li key={p.id} className="flex items-center gap-4 py-4">
                   <span className="h-14 w-14 shrink-0 rounded-xl" style={{ backgroundColor: p.tone }} aria-hidden />
                   <div className="min-w-0 flex-1">
-                    <Link href={`/lab/collection/${p.id}`} onClick={() => setOpen(false)} className="block truncate font-display text-lg hover:underline">
+                    <Link href={productHref(p.id)} onClick={() => setOpen(false)} className="block truncate font-display text-lg hover:underline">
                       {p.name}
                     </Link>
                     <p className="text-xs text-lab-muted">{titleCase(p.category)}</p>

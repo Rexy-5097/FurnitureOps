@@ -16,7 +16,7 @@ export default function QuickView({ params }: { params: { id: string } }) {
   if (!item) notFound();
   return (
     <Modal label={`${item.name} quick view`}>
-      <PieceDetail item={item} compact />
+      <PieceDetail item={item} compact fullPageHref={`/lab/collection/${item.id}`} />
     </Modal>
   );
 }

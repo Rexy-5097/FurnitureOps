@@ -7,16 +7,28 @@ import { cx, formatDate, stockLabel, titleCase } from '../utils/format';
  * Shared by the full detail page and the intercepted quick-view modal
  * (component composition: same content, two different containers).
  */
-export default function PieceDetail({ item, compact = false }: { item: LabItem; compact?: boolean }) {
+export default function PieceDetail({
+  item,
+  compact = false,
+  fullPageHref,
+}: {
+  item: LabItem;
+  compact?: boolean;
+  /** Shown in the quick-view modal as a link to the full page. */
+  fullPageHref?: string;
+}) {
   const soldOut = item.quantity_available === 0;
-  const specs: Array<[string, string]> = [
-    ['Category', titleCase(item.category)],
-    ['Material', item.material],
-    ['Origin', item.origin],
-    ['Availability', stockLabel(item)],
-    ['Sold to date', `${item.quantity_sold} units`],
-    ['Listed', formatDate(item.created_at)],
-  ];
+  // Live inventory has no material column yet, so empty specs are skipped.
+  const specs = (
+    [
+      ['Category', titleCase(item.category)],
+      ['Material', item.material],
+      ['Origin', item.origin],
+      ['Availability', stockLabel(item)],
+      ['Sold to date', `${item.quantity_sold} units`],
+      ['Listed', formatDate(item.created_at)],
+    ] as Array<[string, string]>
+  ).filter(([, value]) => Boolean(value));
 
   return (
     <div className={cx('grid gap-10', compact ? 'md:grid-cols-2' : 'lg:grid-cols-12 lg:gap-16')}>
@@ -28,7 +40,7 @@ export default function PieceDetail({ item, compact = false }: { item: LabItem; 
       />
 
       <div className={cx('flex flex-col', !compact && 'lg:col-span-5 lg:pt-6')}>
-        <p className="text-[11px] font-medium uppercase tracking-[0.22em] text-lab-accent">{item.origin}</p>
+        {item.origin && <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-lab-accent">{item.origin}</p>}
         <h1 className={cx('mt-4 font-display leading-none', compact ? 'text-[2.8rem]' : 'text-[3.2rem] sm:text-[4.2rem]')}>
           {item.name}
         </h1>
@@ -56,9 +68,9 @@ export default function PieceDetail({ item, compact = false }: { item: LabItem; 
           ))}
         </dl>
 
-        {compact && (
+        {compact && fullPageHref && (
           // A plain <a> does a hard navigation, which bypasses the intercepting route.
-          <a href={`/lab/collection/${item.id}`} className="mt-8 text-sm underline underline-offset-4">
+          <a href={fullPageHref} className="mt-8 text-sm underline underline-offset-4">
             Open full page →
           </a>
         )}
